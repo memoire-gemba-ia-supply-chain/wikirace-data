@@ -103,6 +103,13 @@ def fetch_trail_events():
         ("Ultra-Trail Australia", "2026-05-15", "Blue Mountains", "Australia", "AU", 300, "AUD", 4500, "Ultra Trail"),
         ("Hong Kong 100", "2026-01-17", "Hong Kong", "Hong Kong", "HK", 200, "HKD", 5000, "Ultra Trail"),
         ("Ultra Pirineu", "2026-09-25", "Bagà", "Spain", "ES", 150, "EUR", 6200, "Ultra Trail"),
+        # Moroccan Trails
+        ("Ultra Trail Atlas Toubkal", "2026-10-10", "Imlil", "Morocco", "MA", 180, "EUR", 4500, "Ultra Trail"),
+        ("Trans Atlas Marathon", "2026-04-18", "Ouarzazate", "Morocco", "MA", 120, "EUR", 2800, "Ultra Trail"),
+        ("Trail Dunes Merzouga", "2026-03-14", "Merzouga", "Morocco", "MA", 200, "EUR", 500, "Ultra Trail"),
+        ("Zagora Sahara Trail", "2026-11-07", "Zagora", "Morocco", "MA", 150, "EUR", 600, "Ultra Trail"),
+        ("Ifrane Trail", "2026-06-13", "Ifrane", "Morocco", "MA", 60, "EUR", 1200, "Ultra Trail"),
+        ("Chefchaouen Trail", "2026-05-09", "Chefchaouen", "Morocco", "MA", 80, "EUR", 2000, "Ultra Trail"),
     ]
     
     for name, date, city, country, code, price, curr, elev, dist in trails:

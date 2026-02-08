@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-02-08T17:40:07.768053",
-  "totalEvents": 70,
+  "lastUpdated": "2026-02-08T17:41:57.991060",
+  "totalEvents": 76,
   "events": [
     {
       "id": "hong-kong-100",
@@ -190,6 +190,23 @@
       "registrationStatus": "open"
     },
     {
+      "id": "trail-dunes-merzouga",
+      "name": "Trail Dunes Merzouga",
+      "date": "2026-03-14",
+      "city": "Merzouga",
+      "country": "Morocco",
+      "countryCode": "MA",
+      "discipline": "Trail",
+      "distance": "Ultra Trail",
+      "elevationGain": 500,
+      "description": "Major trail event in Merzouga.",
+      "registrationUrl": "https://trail-dunes-merzouga.com",
+      "imageUrl": "trail_dunes_merzouga",
+      "price": 200,
+      "currency": "EUR",
+      "registrationStatus": "open"
+    },
+    {
       "id": "rome-marathon",
       "name": "Rome Marathon",
       "date": "2026-03-15",
@@ -343,6 +360,23 @@
       "registrationStatus": "open"
     },
     {
+      "id": "trans-atlas-marathon",
+      "name": "Trans Atlas Marathon",
+      "date": "2026-04-18",
+      "city": "Ouarzazate",
+      "country": "Morocco",
+      "countryCode": "MA",
+      "discipline": "Trail",
+      "distance": "Ultra Trail",
+      "elevationGain": 2800,
+      "description": "Major trail event in Ouarzazate.",
+      "registrationUrl": "https://trans-atlas-marathon.com",
+      "imageUrl": "trans_atlas_marathon",
+      "price": 120,
+      "currency": "EUR",
+      "registrationStatus": "open"
+    },
+    {
       "id": "vienna-marathon",
       "name": "Vienna Marathon",
       "date": "2026-04-19",
@@ -411,6 +445,23 @@
       "registrationStatus": "open"
     },
     {
+      "id": "chefchaouen-trail",
+      "name": "Chefchaouen Trail",
+      "date": "2026-05-09",
+      "city": "Chefchaouen",
+      "country": "Morocco",
+      "countryCode": "MA",
+      "discipline": "Trail",
+      "distance": "Ultra Trail",
+      "elevationGain": 2000,
+      "description": "Major trail event in Chefchaouen.",
+      "registrationUrl": "https://chefchaouen-trail.com",
+      "imageUrl": "chefchaouen_trail",
+      "price": 80,
+      "currency": "EUR",
+      "registrationStatus": "open"
+    },
+    {
       "id": "ironman-703-mallorca",
       "name": "Ironman 70.3 Mallorca",
       "date": "2026-05-09",
@@ -475,6 +526,23 @@
       "registrationUrl": "https://stockholm-marathon.com",
       "imageUrl": "stockholm_marathon",
       "price": 95,
+      "currency": "EUR",
+      "registrationStatus": "open"
+    },
+    {
+      "id": "ifrane-trail",
+      "name": "Ifrane Trail",
+      "date": "2026-06-13",
+      "city": "Ifrane",
+      "country": "Morocco",
+      "countryCode": "MA",
+      "discipline": "Trail",
+      "distance": "Ultra Trail",
+      "elevationGain": 1200,
+      "description": "Major trail event in Ifrane.",
+      "registrationUrl": "https://ifrane-trail.com",
+      "imageUrl": "ifrane_trail",
+      "price": 60,
       "currency": "EUR",
       "registrationStatus": "open"
     },
@@ -904,6 +972,23 @@
       "registrationStatus": "open"
     },
     {
+      "id": "ultra-trail-atlas-toubkal",
+      "name": "Ultra Trail Atlas Toubkal",
+      "date": "2026-10-10",
+      "city": "Imlil",
+      "country": "Morocco",
+      "countryCode": "MA",
+      "discipline": "Trail",
+      "distance": "Ultra Trail",
+      "elevationGain": 4500,
+      "description": "Major trail event in Imlil.",
+      "registrationUrl": "https://ultra-trail-atlas-toubkal.com",
+      "imageUrl": "ultra_trail_atlas_toubkal",
+      "price": 180,
+      "currency": "EUR",
+      "registrationStatus": "open"
+    },
+    {
       "id": "ironman-world-championship",
       "name": "Ironman World Championship",
       "date": "2026-10-10",
@@ -1054,6 +1139,23 @@
       "imageUrl": "nyc_marathon",
       "price": 295,
       "currency": "USD",
+      "registrationStatus": "open"
+    },
+    {
+      "id": "zagora-sahara-trail",
+      "name": "Zagora Sahara Trail",
+      "date": "2026-11-07",
+      "city": "Zagora",
+      "country": "Morocco",
+      "countryCode": "MA",
+      "discipline": "Trail",
+      "distance": "Ultra Trail",
+      "elevationGain": 600,
+      "description": "Major trail event in Zagora.",
+      "registrationUrl": "https://zagora-sahara-trail.com",
+      "imageUrl": "zagora_sahara_trail",
+      "price": 150,
+      "currency": "EUR",
       "registrationStatus": "open"
     },
     {
