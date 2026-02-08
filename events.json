@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-02-08T17:32:34.565771",
-  "totalEvents": 65,
+  "lastUpdated": "2026-02-08T17:40:07.768053",
+  "totalEvents": 70,
   "events": [
     {
       "id": "hong-kong-100",
@@ -105,6 +105,23 @@
       "registrationStatus": "open"
     },
     {
+      "id": "agadir-semi-marathon",
+      "name": "Agadir Semi-Marathon",
+      "date": "2026-02-22",
+      "city": "Agadir",
+      "country": "Morocco",
+      "countryCode": "MA",
+      "discipline": "Running",
+      "distance": "Marathon",
+      "elevationGain": 50,
+      "description": "Major marathon in Agadir.",
+      "registrationUrl": "https://agadir-marathon.com",
+      "imageUrl": "agadir_semi-marathon",
+      "price": 30,
+      "currency": "EUR",
+      "registrationStatus": "open"
+    },
+    {
       "id": "transgrancanaria",
       "name": "Transgrancanaria",
       "date": "2026-02-28",
@@ -152,6 +169,23 @@
       "registrationUrl": "https://paris-half.com",
       "imageUrl": "paris_half",
       "price": 60,
+      "currency": "EUR",
+      "registrationStatus": "open"
+    },
+    {
+      "id": "rabat-marathon",
+      "name": "Rabat Marathon",
+      "date": "2026-03-08",
+      "city": "Rabat",
+      "country": "Morocco",
+      "countryCode": "MA",
+      "discipline": "Running",
+      "distance": "Marathon",
+      "elevationGain": 50,
+      "description": "Major marathon in Rabat.",
+      "registrationUrl": "https://rabat-marathon.com",
+      "imageUrl": "rabat_marathon",
+      "price": 40,
       "currency": "EUR",
       "registrationStatus": "open"
     },
@@ -408,6 +442,23 @@
       "imageUrl": "ultra-trail_australia",
       "price": 300,
       "currency": "AUD",
+      "registrationStatus": "open"
+    },
+    {
+      "id": "fes-marathon",
+      "name": "Fes Marathon",
+      "date": "2026-05-17",
+      "city": "Fes",
+      "country": "Morocco",
+      "countryCode": "MA",
+      "discipline": "Running",
+      "distance": "Marathon",
+      "elevationGain": 50,
+      "description": "Major marathon in Fes.",
+      "registrationUrl": "https://fes-marathon.com",
+      "imageUrl": "fes_marathon",
+      "price": 35,
+      "currency": "EUR",
       "registrationStatus": "open"
     },
     {
@@ -972,6 +1023,23 @@
       "registrationStatus": "open"
     },
     {
+      "id": "casablanca-marathon",
+      "name": "Casablanca Marathon",
+      "date": "2026-10-25",
+      "city": "Casablanca",
+      "country": "Morocco",
+      "countryCode": "MA",
+      "discipline": "Running",
+      "distance": "Marathon",
+      "elevationGain": 50,
+      "description": "Major marathon in Casablanca.",
+      "registrationUrl": "https://casablanca-marathon.com",
+      "imageUrl": "casablanca_marathon",
+      "price": 50,
+      "currency": "EUR",
+      "registrationStatus": "open"
+    },
+    {
       "id": "nyc-marathon",
       "name": "NYC Marathon",
       "date": "2026-11-01",
@@ -1019,6 +1087,23 @@
       "registrationUrl": "https://istanbul-marathon.com",
       "imageUrl": "istanbul_marathon",
       "price": 80,
+      "currency": "EUR",
+      "registrationStatus": "open"
+    },
+    {
+      "id": "tanger-marathon",
+      "name": "Tanger Marathon",
+      "date": "2026-11-15",
+      "city": "Tanger",
+      "country": "Morocco",
+      "countryCode": "MA",
+      "discipline": "Running",
+      "distance": "Marathon",
+      "elevationGain": 50,
+      "description": "Major marathon in Tanger.",
+      "registrationUrl": "https://tanger-marathon.com",
+      "imageUrl": "tanger_marathon",
+      "price": 45,
       "currency": "EUR",
       "registrationStatus": "open"
     },

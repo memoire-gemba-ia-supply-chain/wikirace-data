@@ -48,6 +48,11 @@ def fetch_marathon_guide():
             ("Seoul Marathon", "2026-03-15", "Seoul", "South Korea", "KR", 80, "USD"),
             ("Mumbai Marathon", "2026-01-18", "Mumbai", "India", "IN", 50, "USD"),
             ("Marrakech Marathon", "2026-01-25", "Marrakech", "Morocco", "MA", 70, "EUR"),
+            ("Casablanca Marathon", "2026-10-25", "Casablanca", "Morocco", "MA", 50, "EUR"),
+            ("Rabat Marathon", "2026-03-08", "Rabat", "Morocco", "MA", 40, "EUR"),
+            ("Tanger Marathon", "2026-11-15", "Tanger", "Morocco", "MA", 45, "EUR"),
+            ("Agadir Semi-Marathon", "2026-02-22", "Agadir", "Morocco", "MA", 30, "EUR"),
+            ("Fes Marathon", "2026-05-17", "Fes", "Morocco", "MA", 35, "EUR"),
             ("Cape Town Marathon", "2026-10-18", "Cape Town", "South Africa", "ZA", 60, "USD"),
         ]
         
