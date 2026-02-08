@@ -1,0 +1,48 @@
+"tab.explore" = "Événements";
+"tab.calendar" = "Mes Courses";
+
+"home.title" = "WikiRace";
+"home.events_count" = "%d événements";
+"home.sort.asc" = "Date ↑";
+"home.sort.desc" = "Date ↓";
+
+"filter.running" = "Course";
+"filter.trail" = "Trail";
+"filter.triathlon" = "Triathlon";
+
+"detail.about" = "À propos de l'événement";
+"detail.register" = "S'inscrire";
+"detail.add_calendar" = "Ajouter à mon calendrier";
+"detail.price" = "Prix";
+"detail.distance" = "Distance";
+"detail.date" = "Date";
+
+"goal.title" = "Fixez votre objectif";
+"goal.type" = "Type d'objectif";
+"goal.pace" = "Allure (min/km)";
+"goal.speed" = "Vitesse (km/h)";
+"goal.target" = "Votre cible";
+"goal.notes" = "Notes (Optionnel)";
+"goal.add" = "Ajouter au calendrier";
+"goal.cancel" = "Annuler";
+
+"myevents.title" = "Mes Courses";
+"myevents.empty" = "Aucune course pour le moment";
+"myevents.empty_subtitle" = "Explorez les courses et ajoutez-les\npour commencer votre entraînement !";
+"myevents.days" = "JOURS";
+"myevents.target" = "Cible: %@";
+"myevents.remove" = "Supprimer";
+
+"status.open" = "Ouvert";
+"status.closed" = "Fermé";
+"status.soldout" = "Complet";
+
+"alert.added" = "Ajouté !";
+"alert.added_message" = "Événement ajouté à votre calendrier ! Commencer le plan d'entraînement ?";
+"alert.ok" = "Commencer l'entraînement";
+
+"prep.days_to_go" = "JOURS AVANT";
+"prep.strategy" = "Stratégie";
+"prep.training" = "Entraînement";
+"prep.checklist" = "Check-list";
+"prep.remove" = "Retirer de mes courses";

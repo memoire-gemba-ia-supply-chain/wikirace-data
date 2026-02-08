@@ -1,0 +1,23 @@
+# Xcode
+build/
+DerivedData/
+*.xcworkspace
+*.xcuserdatad
+*.xcuserstate
+*.xccheckout
+*.xcscheme
+*.xsched
+*.xcextension
+*.xctest
+*.xctestrun
+*.xcresult
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# OS
+.DS_Store

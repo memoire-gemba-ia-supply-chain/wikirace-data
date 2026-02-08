@@ -1,0 +1,500 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+    "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/WikiRaceApp_WikiRaceApp.bundle/Info.plist" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/WikiRaceApp.build/Info.plist"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/WikiRaceApp_WikiRaceApp.bundle/Info.plist"
+        }
+      ]
+    },
+    "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/WikiRaceApp_WikiRaceApp.bundle/en.lproj/Localizable.strings" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/WikiRaceApp/en.lproj/Localizable.strings"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/WikiRaceApp_WikiRaceApp.bundle/en.lproj/Localizable.strings"
+        }
+      ]
+    },
+    "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/WikiRaceApp_WikiRaceApp.bundle/fr.lproj/Localizable.strings" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/WikiRaceApp/fr.lproj/Localizable.strings"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/WikiRaceApp_WikiRaceApp.bundle/fr.lproj/Localizable.strings"
+        }
+      ]
+    }
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.WikiRaceApp-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/WikiRaceApp.build/sources",
+      "importPath" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/WikiRaceApp/Components.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/WikiRaceApp/ContentView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/WikiRaceApp/EventDetailView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/WikiRaceApp/HomeView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/WikiRaceApp/Models.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/WikiRaceApp/MyEventsView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/WikiRaceApp/RaceDataService.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/WikiRaceApp/SavedRaceEntry.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/WikiRaceApp/Theme.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/WikiRaceApp/WikiRaceApp.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/WikiRaceApp.build/DerivedSources/resource_bundle_accessor.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "virtual",
+          "name" : "<WikiRaceApp-arm64-apple-macosx26.0-debug.module-resources>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/WikiRaceApp.build/sources"
+        }
+      ],
+      "isLibrary" : false,
+      "moduleName" : "WikiRaceApp",
+      "moduleOutputPath" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/Modules/WikiRaceApp.swiftmodule",
+      "objects" : [
+        "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/WikiRaceApp.build/Components.swift.o",
+        "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/WikiRaceApp.build/ContentView.swift.o",
+        "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/WikiRaceApp.build/EventDetailView.swift.o",
+        "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/WikiRaceApp.build/HomeView.swift.o",
+        "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/WikiRaceApp.build/Models.swift.o",
+        "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/WikiRaceApp.build/MyEventsView.swift.o",
+        "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/WikiRaceApp.build/RaceDataService.swift.o",
+        "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/WikiRaceApp.build/SavedRaceEntry.swift.o",
+        "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/WikiRaceApp.build/Theme.swift.o",
+        "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/WikiRaceApp.build/WikiRaceApp.swift.o",
+        "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/WikiRaceApp.build/resource_bundle_accessor.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j12",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_AVAILABLE",
+        "-module-cache-path",
+        "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-Xfrontend",
+        "-entry-point-function-name",
+        "-Xfrontend",
+        "WikiRaceApp_main",
+        "-color-diagnostics",
+        "-swift-version",
+        "5",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "wikiraceapp"
+      ],
+      "outputFileMapPath" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/WikiRaceApp.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/WikiRaceApp.build/Components.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/WikiRaceApp.build/ContentView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/WikiRaceApp.build/EventDetailView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/WikiRaceApp.build/HomeView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/WikiRaceApp.build/Models.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/WikiRaceApp.build/MyEventsView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/WikiRaceApp.build/RaceDataService.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/WikiRaceApp.build/SavedRaceEntry.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/WikiRaceApp.build/Theme.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/WikiRaceApp.build/WikiRaceApp.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/WikiRaceApp.build/resource_bundle_accessor.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/Modules/WikiRaceApp.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/WikiRaceApp/Components.swift",
+        "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/WikiRaceApp/ContentView.swift",
+        "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/WikiRaceApp/EventDetailView.swift",
+        "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/WikiRaceApp/HomeView.swift",
+        "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/WikiRaceApp/Models.swift",
+        "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/WikiRaceApp/MyEventsView.swift",
+        "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/WikiRaceApp/RaceDataService.swift",
+        "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/WikiRaceApp/SavedRaceEntry.swift",
+        "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/WikiRaceApp/Theme.swift",
+        "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/WikiRaceApp/WikiRaceApp.swift",
+        "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/WikiRaceApp.build/DerivedSources/resource_bundle_accessor.swift"
+      ],
+      "tempsPath" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/WikiRaceApp.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "WikiRaceApp" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "WikiRaceApp",
+      "-package-name",
+      "wikiraceapp",
+      "-c",
+      "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/WikiRaceApp/Components.swift",
+      "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/WikiRaceApp/ContentView.swift",
+      "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/WikiRaceApp/EventDetailView.swift",
+      "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/WikiRaceApp/HomeView.swift",
+      "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/WikiRaceApp/Models.swift",
+      "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/WikiRaceApp/MyEventsView.swift",
+      "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/WikiRaceApp/RaceDataService.swift",
+      "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/WikiRaceApp/SavedRaceEntry.swift",
+      "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/WikiRaceApp/Theme.swift",
+      "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/WikiRaceApp/WikiRaceApp.swift",
+      "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/WikiRaceApp.build/DerivedSources/resource_bundle_accessor.swift",
+      "-I",
+      "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j12",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_AVAILABLE",
+      "-module-cache-path",
+      "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-Xfrontend",
+      "-entry-point-function-name",
+      "-Xfrontend",
+      "WikiRaceApp_main",
+      "-color-diagnostics",
+      "-swift-version",
+      "5",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "wikiraceapp",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "WikiRaceApp" : [
+
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "traitConfiguration" : {
+    "default" : {
+
+    }
+  },
+  "writeCommands" : {
+    "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/WikiRaceApp-entitlement.plist" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<entitlement-plist>"
+        },
+        {
+          "kind" : "virtual",
+          "name" : "<com.apple.security.get-task-allow>"
+        }
+      ],
+      "outputFilePath" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/WikiRaceApp-entitlement.plist"
+    },
+    "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/WikiRaceApp.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/WikiRaceApp/Components.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/WikiRaceApp/ContentView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/WikiRaceApp/EventDetailView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/WikiRaceApp/HomeView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/WikiRaceApp/Models.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/WikiRaceApp/MyEventsView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/WikiRaceApp/RaceDataService.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/WikiRaceApp/SavedRaceEntry.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/WikiRaceApp/Theme.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/WikiRaceApp/WikiRaceApp.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/WikiRaceApp.build/DerivedSources/resource_bundle_accessor.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/WikiRaceApp.build/sources"
+    },
+    "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/WikiRaceApp.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/WikiRaceApp.build/Components.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/WikiRaceApp.build/ContentView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/WikiRaceApp.build/EventDetailView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/WikiRaceApp.build/HomeView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/WikiRaceApp.build/Models.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/WikiRaceApp.build/MyEventsView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/WikiRaceApp.build/RaceDataService.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/WikiRaceApp.build/SavedRaceEntry.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/WikiRaceApp.build/Theme.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/WikiRaceApp.build/WikiRaceApp.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/WikiRaceApp.build/resource_bundle_accessor.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/WikiRaceApp.product/Objects.LinkFileList"
+    },
+    "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/anassmouakkid/.gemini/antigravity/scratch/WikiRaceApp/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+    }
+  }
+}
