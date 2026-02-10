@@ -127,7 +127,8 @@ def fetch_triathlon_events() -> List[RaceEvent]:
                 price=None,
                 currency="EUR" if code in ["FR", "DE", "ES"] else "USD",
                 registrationStatus="Open",
-                availableDistances=distances
+
+                availableDistances=["1.9km Swim", "90km Bike", "21.1km Run"] if "70.3" in name else ["3.8km Swim", "180km Bike", "42.2km Run"]
             )
         )
         

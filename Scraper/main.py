@@ -18,6 +18,7 @@ from sources.itra import fetch_itra_events
 from sources.ultrasignup import fetch_ultrasignup_events
 from sources.morocco import fetch_moroccan_events
 from sources.triathlon import fetch_triathlon_events
+from sources.major_marathons import fetch_major_marathons
 
 
 def deduplicate_events(events: list[RaceEvent]) -> list[RaceEvent]:
@@ -53,7 +54,14 @@ def main():
     except Exception as e:
         print(f"⚠️ RunSignup failed: {e}")
     
-    print("\n🇲🇦 Fetching Specialized Morocco Events...")
+    print("\n🇲🇦 Fetching Specialized Morocco Events (Moov.ma)...")
+    try:
+        from sources.moov_ma import fetch_moov_ma_events
+        all_events.extend(fetch_moov_ma_events())
+    except Exception as e:
+        print(f"⚠️ Moov.ma Source failed: {e}")
+
+    print("\n🇲🇦 Fetching Curated Morocco Events (Fallback)...")
     try:
         all_events.extend(fetch_moroccan_events())
     except Exception as e:
@@ -64,6 +72,12 @@ def main():
         all_events.extend(fetch_triathlon_events())
     except Exception as e:
         print(f"⚠️ Triathlon Source failed: {e}")
+
+    print("\n🌍 Fetching World Major Marathons...")
+    try:
+        all_events.extend(fetch_major_marathons())
+    except Exception as e:
+        print(f"⚠️ Major Marathons Source failed: {e}")
 
     print("\n🏔️ Fetching from ITRA...")
     try:

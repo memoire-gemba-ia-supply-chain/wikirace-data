@@ -1,0 +1,47 @@
+name: Daily WikiRace Scraper
+
+on:
+  schedule:
+    # Run at 06:00 UTC every day
+    - cron: '0 6 * * *'
+  workflow_dispatch: # Allow manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  scrape-and-update:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+        
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r Active_Development/Scraper/requirements.txt
+        
+    - name: Run Scraper
+      run: |
+        python Active_Development/Scraper/main.py
+        
+    - name: Check for changes
+      id: git-check
+      run: |
+        git diff --exit-code || echo "changes=true" >> $GITHUB_OUTPUT
+        
+    - name: Commit and Push changes
+      if: steps.git-check.outputs.changes == 'true'
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git add Active_Development/WikiRaceApp_Export/WikiRaceApp/events.json
+        git add Active_Development/Scraper/events.json
+        git commit -m "🤖 Auto-update events.json [skip ci]"
+        git push

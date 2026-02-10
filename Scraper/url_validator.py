@@ -19,15 +19,48 @@ def check_url(url: str, timeout: int = 5) -> bool:
     """Check if a URL is reachable and returns a success status code"""
     if not url or not url.startswith("http"):
         return False
-    try:
-        # Use HEAD request for speed, fall back to GET if HEAD is not allowed
-        headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'}
-        response = requests.head(url, timeout=timeout, allow_redirects=True, headers=headers)
-        if response.status_code >= 400:
-            response = requests.get(url, timeout=timeout, allow_redirects=True, headers=headers, stream=True)
-        return response.status_code < 400
-    except Exception:
-        return False
+        
+    # Rotating User Agents to avoid simple blocking
+    user_agents = [
+        'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36',
+        'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36'
+    ]
+    
+    import random
+    import time
+    
+    for attempt in range(2):
+        try:
+            headers = {
+                'User-Agent': random.choice(user_agents),
+                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+                'Accept-Language': 'en-US,en;q=0.5'
+            }
+            
+            # HEAD request for speed
+            response = requests.head(url, timeout=timeout, allow_redirects=True, headers=headers)
+            if response.status_code < 400:
+                return True
+                
+            # If method not allowed or error, try GET
+            if response.status_code >= 400:
+                 time.sleep(1) # Chill before retry
+                 response = requests.get(url, timeout=timeout, allow_redirects=True, headers=headers, stream=True)
+                 
+            if response.status_code < 400:
+                # Check for soft 404s or event cancellations in text
+                content_lower = response.text.lower()
+                if "event cancelled" in content_lower or "page not found" in content_lower:
+                     return False
+                return True
+                
+        except Exception:
+            pass
+        
+        time.sleep(0.5)
+        
+    return False
 
 def validate_data():
     if not EVENTS_JSON.exists():
