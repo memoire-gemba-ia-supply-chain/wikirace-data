@@ -113,6 +113,11 @@ def main():
     from sources.gpx_scraper import run_gpx_scraper
     run_gpx_scraper()
     
+    # Run active URL validation
+    print("\n🛡️ Running active URL validation and cleanup...")
+    from url_validator import validate_data
+    validate_data()
+    
     # Sync to WikiRaceApp Export folder
     try:
         import shutil

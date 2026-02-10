@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-10T13:40:20.732639",
+  "lastUpdated": "2026-02-10T13:48:39.531591",
   "totalEvents": 62,
   "events": [
     {
@@ -133,7 +133,7 @@
       "currency": null,
       "registrationStatus": null,
       "availableDistances": null,
-      "gpxUrl": "https://trailmaroc.com/eco-trail-ouarzazate-gpx"
+      "gpxUrl": null
     },
     {
       "id": "zion-100-2026-04-10",
@@ -171,7 +171,7 @@
       "currency": null,
       "registrationStatus": null,
       "availableDistances": null,
-      "gpxUrl": "https://www.marathondessables.com/en/marathon-des-sables/course"
+      "gpxUrl": null
     },
     {
       "id": "lake-sonoma-50-2026-04-11",
@@ -203,7 +203,7 @@
       "distance": "Ultra Trail",
       "elevationGain": 1800,
       "description": "Run through the door of the desert, passing movie sets and kasbahs.",
-      "registrationUrl": "https://www.ecotrailouarzazate.com/",
+      "registrationUrl": "https://example.com",
       "imageUrl": "eco_trail_ouarzazate",
       "price": null,
       "currency": "MAD",
@@ -213,7 +213,7 @@
         "30km",
         "70km"
       ],
-      "gpxUrl": "https://trailmaroc.com/eco-trail-ouarzazate-gpx"
+      "gpxUrl": null
     },
     {
       "id": "ultra-trail-mount-fuji-2026-04-24",
@@ -245,7 +245,7 @@
       "distance": "Marathon",
       "elevationGain": 2200,
       "description": "A rugged trail in the High Atlas foothills, known for its technical terrain and Berber village hospitality.",
-      "registrationUrl": "https://trailmaroc.com/trail-amizmiz/",
+      "registrationUrl": "https://example.com",
       "imageUrl": "trail_amizmiz",
       "price": null,
       "currency": "MAD",
@@ -353,7 +353,7 @@
       "currency": null,
       "registrationStatus": null,
       "availableDistances": null,
-      "gpxUrl": "https://www.moroccotrail.com/ut-cedres-tracks"
+      "gpxUrl": null
     },
     {
       "id": "trans-atlas-marathon-2026-05-18",
@@ -391,7 +391,7 @@
       "currency": null,
       "registrationStatus": null,
       "availableDistances": null,
-      "gpxUrl": "https://www.zegama-aizkorri.com/en/races/marathon/#course"
+      "gpxUrl": null
     },
     {
       "id": "swiss-canyon-trail-2026-06-05",
@@ -600,7 +600,7 @@
       "currency": null,
       "registrationStatus": null,
       "availableDistances": null,
-      "gpxUrl": "https://eigerultratrail.ch/en/races/e101.html"
+      "gpxUrl": null
     },
     {
       "id": "hardrock-100-2026-07-17",
@@ -803,7 +803,7 @@
       "distance": "Marathon",
       "elevationGain": 1500,
       "description": "Run through the Blue Pearl of Morocco and the Rif mountains.",
-      "registrationUrl": "https://www.chefchaouentrail.com/",
+      "registrationUrl": "https://example.com",
       "imageUrl": "chefchaouen_trail",
       "price": null,
       "currency": "MAD",
@@ -927,7 +927,7 @@
       "currency": null,
       "registrationStatus": null,
       "availableDistances": null,
-      "gpxUrl": "https://trailmaroc.com/atlas-quest-gpx"
+      "gpxUrl": null
     },
     {
       "id": "grand-raid-de-la-réunion-2026-10-15",
@@ -997,7 +997,7 @@
       "distance": "Marathon",
       "elevationGain": 100,
       "description": "The leading road race in the economic capital of Morocco.",
-      "registrationUrl": "https://www.casa-marathon.com/",
+      "registrationUrl": "https://example.com",
       "imageUrl": "international_marathon_of_casablanca",
       "price": null,
       "currency": "MAD",
@@ -1007,7 +1007,7 @@
         "21km",
         "42km"
       ],
-      "gpxUrl": "https://www.casa-marathon.com/parcours-gpx"
+      "gpxUrl": null
     },
     {
       "id": "javelina-jundred-2026-10-31",
@@ -1058,7 +1058,7 @@
       "distance": "Ultra Trail",
       "elevationGain": 3500,
       "description": "International trail event combining desert and mountain landscapes near Marrakech.",
-      "registrationUrl": "https://www.moroccorace.com/",
+      "registrationUrl": "https://example.com",
       "imageUrl": "morocco_race",
       "price": null,
       "currency": "MAD",
@@ -1197,7 +1197,7 @@
       "distance": "Half Marathon",
       "elevationGain": 650,
       "description": "Scenic trail running around the beautiful Lalla Takerkoust lake with Atlas mountains backdrop.",
-      "registrationUrl": "https://www.trail-maroc.com/",
+      "registrationUrl": "https://example.com",
       "imageUrl": "trail_lac_lalla_takerkoust",
       "price": null,
       "currency": "MAD",
@@ -1210,6 +1210,7 @@
       "gpxUrl": null
     }
   ],
-  "lastAudit": "2026-02-10T13:40:20.735670",
-  "gpxUpdate": "2026-02-10 13:40:20"
+  "lastAudit": "2026-02-10T13:48:39.534015",
+  "gpxUpdate": "2026-02-10 13:48:39",
+  "lastValidation": "2026-02-10T13:48:47.431301"
 }
