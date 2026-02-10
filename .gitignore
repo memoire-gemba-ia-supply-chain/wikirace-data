@@ -1,0 +1,9 @@
+# System files
+.DS_Store
+venv/
+__pycache__/
+*.pyc
+
+# App source (not needed in data repo)
+WikiRaceApp_Export/
+WikiRaceApp.swiftpm/

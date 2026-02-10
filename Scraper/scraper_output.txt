@@ -1,0 +1,36 @@
+🏃 WikiRace Event Scraper
+========================================
+
+📡 Fetching from RunSignup API...
+✅ RunSignup: Fetched 416 events
+
+🇲🇦 Fetching Specialized Morocco Events...
+✅ Morocco Special Source: Loaded 7 curated events
+
+🏊🚴🏃 Fetching Triathlon & Ironman Events...
+✅ Triathlon Source: Loaded 8 major events
+
+🏔️ Fetching from ITRA...
+✅ ITRA: Fetched 30 events
+
+🏃‍♂️ Fetching from UltraSignup...
+✅ UltraSignup: Fetched 30 events
+
+🔄 Processing events...
+
+📊 Total unique events: 57
+
+✅ Saved to: /Users/anassmouakkid/.gemini/antigravity/scratch/Active_Development/events.json
+📅 Last updated: 2026-02-10T11:41:50.481472
+
+📋 Sample events:
+  - Tarawera Ultramarathon | 2026-02-14 | Rotorua, New Zealand
+  - Black Canyon 100K | 2026-02-14 | Mayer, USA
+  - Trail Lac Lalla Takerkoust | 2026-02-15 | Lalla Takerkoust, Morocco
+  - Transgrancanaria | 2026-02-28 | Las Palmas, Spain
+  - Nomads Ultra Trail | 2026-03-20 | Zagora, Morocco
+  - EcoTrail Paris | 2026-03-21 | Paris, France
+  - Two Oceans Marathon | 2026-04-04 | Cape Town, South Africa
+  - Eco Trail Ouarzazate | 2026-04-05 | Ouarzazate, Morocco
+  - Zion 100 | 2026-04-10 | Zion, USA
+  - Marathon des Sables | 2026-04-10 | Sahara Desert, Morocco
