@@ -1,45 +1,7 @@
 {
-  "lastUpdated": "2026-02-14T07:49:32.509232",
-  "totalEvents": 86,
+  "lastUpdated": "2026-02-15T07:51:50.354643",
+  "totalEvents": 84,
   "events": [
-    {
-      "id": "tarawera-ultramarathon-2026-02-14",
-      "name": "Tarawera Ultramarathon",
-      "date": "2026-02-14",
-      "city": "Rotorua",
-      "country": "New Zealand",
-      "countryCode": "NZ",
-      "discipline": "Trail",
-      "distance": "Ultra Trail",
-      "elevationGain": 3000,
-      "description": "Major trail event in Rotorua, part of international circuits.",
-      "registrationUrl": "https://itra.run",
-      "imageUrl": "tarawera_ultramarathon",
-      "price": null,
-      "currency": null,
-      "registrationStatus": null,
-      "availableDistances": null,
-      "gpxUrl": null
-    },
-    {
-      "id": "black-canyon-100k-2026-02-14",
-      "name": "Black Canyon 100K",
-      "date": "2026-02-14",
-      "city": "Mayer",
-      "country": "USA",
-      "countryCode": "US",
-      "discipline": "Trail",
-      "distance": "Ultra Trail",
-      "elevationGain": null,
-      "description": "Major ultra-marathon in Mayer, known for its extreme difficulty and beauty.",
-      "registrationUrl": "https://ultrasignup.com",
-      "imageUrl": "black_canyon_100k",
-      "price": null,
-      "currency": null,
-      "registrationStatus": null,
-      "availableDistances": null,
-      "gpxUrl": null
-    },
     {
       "id": "marathon-spirituel-de-fès-2026-02-15",
       "name": "Marathon Spirituel de Fès",
@@ -1737,7 +1699,7 @@
       "gpxUrl": null
     }
   ],
-  "lastAudit": "2026-02-14T07:49:32.515833",
-  "gpxUpdate": "2026-02-14 07:49:32",
-  "lastValidation": "2026-02-14T07:49:45.647664"
+  "lastAudit": "2026-02-15T07:51:50.361154",
+  "gpxUpdate": "2026-02-15 07:51:50",
+  "lastValidation": "2026-02-15T07:52:04.543214"
 }
