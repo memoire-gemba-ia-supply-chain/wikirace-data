@@ -1,31 +1,7 @@
 {
-  "lastUpdated": "2026-02-15T07:51:50.354643",
-  "totalEvents": 84,
+  "lastUpdated": "2026-02-16T08:05:25.133084",
+  "totalEvents": 83,
   "events": [
-    {
-      "id": "marathon-spirituel-de-fès-2026-02-15",
-      "name": "Marathon Spirituel de Fès",
-      "date": "2026-02-15",
-      "city": "Fès",
-      "country": "Morocco",
-      "countryCode": "MA",
-      "discipline": "Running",
-      "distance": "42km",
-      "elevationGain": null,
-      "description": "Distances: 42km, 21km, 10km, Kids Run",
-      "registrationUrl": "https://moov.ma/course/marathon-spirituel-de-fes/",
-      "imageUrl": "https://moov.ma/wp-content/uploads/2024/11/FEZ-2-768x512.jpg",
-      "price": null,
-      "currency": "MAD",
-      "registrationStatus": "Open",
-      "availableDistances": [
-        "42km",
-        "21km",
-        "10km",
-        "Kids Run"
-      ],
-      "gpxUrl": null
-    },
     {
       "id": "transgrancanaria-2026-02-28",
       "name": "Transgrancanaria",
@@ -1699,7 +1675,7 @@
       "gpxUrl": null
     }
   ],
-  "lastAudit": "2026-02-15T07:51:50.361154",
-  "gpxUpdate": "2026-02-15 07:51:50",
-  "lastValidation": "2026-02-15T07:52:04.543214"
+  "lastAudit": "2026-02-16T08:05:25.139463",
+  "gpxUpdate": "2026-02-16 08:05:25",
+  "lastValidation": "2026-02-16T08:05:38.683820"
 }
