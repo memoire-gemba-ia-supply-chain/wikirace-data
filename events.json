@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-02-20T08:00:36.363707",
-  "totalEvents": 83,
+  "lastUpdated": "2026-02-21T07:44:55.810723",
+  "totalEvents": 58,
   "events": [
     {
       "id": "transgrancanaria-2026-02-28",
@@ -296,29 +296,6 @@
       "gpxUrl": "https://www.tcslondonmarathon.com/the-event/the-course"
     },
     {
-      "id": "marathon-international-de-rabat-2025-2026-04-27",
-      "name": "Marathon International de Rabat 2025",
-      "date": "2026-04-27",
-      "city": "Rabat",
-      "country": "Morocco",
-      "countryCode": "MA",
-      "discipline": "Running",
-      "distance": "42km",
-      "elevationGain": null,
-      "description": "Distances: 42km, 21km, 10km",
-      "registrationUrl": "https://moov.ma/course/marathon-international-de-rabat/",
-      "imageUrl": "https://moov.ma/wp-content/uploads/2024/11/JS6A0247-768x465.jpg",
-      "price": null,
-      "currency": "MAD",
-      "registrationStatus": "Open",
-      "availableDistances": [
-        "42km",
-        "21km",
-        "10km"
-      ],
-      "gpxUrl": null
-    },
-    {
       "id": "ultra-trail-australia-2026-05-14",
       "name": "Ultra-Trail Australia",
       "date": "2026-05-14",
@@ -528,28 +505,6 @@
       "gpxUrl": null
     },
     {
-      "id": "semi-marathon-international-de-casablanca-2026-06-29",
-      "name": "Semi-marathon international de Casablanca",
-      "date": "2026-06-29",
-      "city": "Casablanca",
-      "country": "Morocco",
-      "countryCode": "MA",
-      "discipline": "Running",
-      "distance": "21km",
-      "elevationGain": null,
-      "description": "Distances: 21km, 10km",
-      "registrationUrl": "https://moov.ma/course/semi-marathon-international-de-casablanca/",
-      "imageUrl": "https://moov.ma/wp-content/uploads/2025/06/semi-9e-768x782.jpg",
-      "price": null,
-      "currency": "MAD",
-      "registrationStatus": "Open",
-      "availableDistances": [
-        "21km",
-        "10km"
-      ],
-      "gpxUrl": null
-    },
-    {
       "id": "andorra-ultra-trail-2026-07-03",
       "name": "Andorra Ultra Trail",
       "date": "2026-07-03",
@@ -585,98 +540,6 @@
       "currency": null,
       "registrationStatus": null,
       "availableDistances": null,
-      "gpxUrl": null
-    },
-    {
-      "id": "trail-oukaimeden-2025-2026-07-05",
-      "name": "Trail Oukaimeden 2025",
-      "date": "2026-07-05",
-      "city": "Marrakech",
-      "country": "Morocco",
-      "countryCode": "MA",
-      "discipline": "Trail",
-      "distance": "42km",
-      "elevationGain": null,
-      "description": "Distances: 42km, 21km, 10km, 3km",
-      "registrationUrl": "https://moov.ma/course/trail-oukaimeden-2025/",
-      "imageUrl": "https://moov.ma/wp-content/uploads/2025/07/ouka-768x958.jpg",
-      "price": null,
-      "currency": "MAD",
-      "registrationStatus": "Open",
-      "availableDistances": [
-        "42km",
-        "21km",
-        "10km",
-        "3km"
-      ],
-      "gpxUrl": null
-    },
-    {
-      "id": "trail-rahrah--1ère-édition-2026-07-06",
-      "name": "Trail Rahrah – 1ère édition",
-      "date": "2026-07-06",
-      "city": "",
-      "country": "Morocco",
-      "countryCode": "MA",
-      "discipline": "Trail",
-      "distance": "10km",
-      "elevationGain": null,
-      "description": "Distances: 10km",
-      "registrationUrl": "https://moov.ma/course/trail-rahrah-1ere-edition/",
-      "imageUrl": "https://moov.ma/wp-content/uploads/2025/07/ita-768x1042.jpg",
-      "price": null,
-      "currency": "MAD",
-      "registrationStatus": "Open",
-      "availableDistances": [
-        "10km"
-      ],
-      "gpxUrl": null
-    },
-    {
-      "id": "12ème-édition-blue-coaching-race-2026-07-06",
-      "name": "12ème édition Blue Coaching Race",
-      "date": "2026-07-06",
-      "city": "Casablanca",
-      "country": "Morocco",
-      "countryCode": "MA",
-      "discipline": "Running",
-      "distance": "21km",
-      "elevationGain": null,
-      "description": "Distances: 21km, 15km, 10km, 5km",
-      "registrationUrl": "https://moov.ma/course/12eme-edition-blue-coaching-race/",
-      "imageUrl": "https://moov.ma/wp-content/uploads/2025/07/bluerace-768x1086.jpeg",
-      "price": null,
-      "currency": "MAD",
-      "registrationStatus": "Open",
-      "availableDistances": [
-        "21km",
-        "15km",
-        "10km",
-        "5km"
-      ],
-      "gpxUrl": null
-    },
-    {
-      "id": "trail-des-cerises--ain-leuh-2026-07-06",
-      "name": "Trail des Cerises – Ain Leuh",
-      "date": "2026-07-06",
-      "city": "Ain Leuh",
-      "country": "Morocco",
-      "countryCode": "MA",
-      "discipline": "Trail",
-      "distance": "13km",
-      "elevationGain": null,
-      "description": "Distances: 13km, 25km, 2km",
-      "registrationUrl": "https://moov.ma/course/trail-des-cerises-ain-leuh/",
-      "imageUrl": "https://moov.ma/wp-content/uploads/2025/06/trail-cerises.jpg",
-      "price": null,
-      "currency": "MAD",
-      "registrationStatus": "Open",
-      "availableDistances": [
-        "13km",
-        "25km",
-        "2km"
-      ],
       "gpxUrl": null
     },
     {
@@ -753,69 +616,6 @@
       "currency": null,
       "registrationStatus": null,
       "availableDistances": null,
-      "gpxUrl": null
-    },
-    {
-      "id": "course-internationale-de-10-km--dchira-laâyoune-2026-07-27",
-      "name": "Course Internationale de 10 KM – Dchira, Laâyoune",
-      "date": "2026-07-27",
-      "city": "Laayoune",
-      "country": "Morocco",
-      "countryCode": "MA",
-      "discipline": "Running",
-      "distance": "10km",
-      "elevationGain": null,
-      "description": "Distances: 10km",
-      "registrationUrl": "https://moov.ma/course/course-internationale-de-10-km-dchira-laayoune/",
-      "imageUrl": "https://moov.ma/wp-content/uploads/2025/07/laayoune.png",
-      "price": null,
-      "currency": "MAD",
-      "registrationStatus": "Open",
-      "availableDistances": [
-        "10km"
-      ],
-      "gpxUrl": null
-    },
-    {
-      "id": "1e-édition-du-trail-senhaja-2026-07-27",
-      "name": "1e édition du Trail Senhaja",
-      "date": "2026-07-27",
-      "city": "No Venue Found",
-      "country": "Morocco",
-      "countryCode": "MA",
-      "discipline": "Trail",
-      "distance": "14km",
-      "elevationGain": null,
-      "description": "Distances: 14km",
-      "registrationUrl": "https://moov.ma/course/1e-edition-du-trail-senhaja/",
-      "imageUrl": "https://moov.ma/wp-content/uploads/2025/07/senhaja-768x1087.jpg",
-      "price": null,
-      "currency": "MAD",
-      "registrationStatus": "Open",
-      "availableDistances": [
-        "14km"
-      ],
-      "gpxUrl": null
-    },
-    {
-      "id": "10km-by-wecasablanca-2026-08-04",
-      "name": "10KM by WeCasablanca",
-      "date": "2026-08-04",
-      "city": "Casablanca",
-      "country": "Morocco",
-      "countryCode": "MA",
-      "discipline": "Running",
-      "distance": "10km",
-      "elevationGain": null,
-      "description": "Distances: 10km",
-      "registrationUrl": "https://moov.ma/course/10km-by-wecasablanca/",
-      "imageUrl": "https://moov.ma/wp-content/uploads/2025/08/casawe.png",
-      "price": null,
-      "currency": "MAD",
-      "registrationStatus": "Open",
-      "availableDistances": [
-        "10km"
-      ],
       "gpxUrl": null
     },
     {
@@ -990,28 +790,6 @@
       "gpxUrl": null
     },
     {
-      "id": "les-foulées-solidaires--2ᵉ-édition-2026-09-14",
-      "name": "Les foulées solidaires – 2ᵉ édition",
-      "date": "2026-09-14",
-      "city": "Casablanca",
-      "country": "Morocco",
-      "countryCode": "MA",
-      "discipline": "Running",
-      "distance": "10km",
-      "elevationGain": null,
-      "description": "Distances: 10km, 5km",
-      "registrationUrl": "https://moov.ma/course/les-foulees-solidaires-2%e1%b5%89-edition/",
-      "imageUrl": "https://moov.ma/wp-content/uploads/2025/06/mmsor-768x1087.jpeg",
-      "price": null,
-      "currency": "MAD",
-      "registrationStatus": "Open",
-      "availableDistances": [
-        "10km",
-        "5km"
-      ],
-      "gpxUrl": null
-    },
-    {
       "id": "run-rabbit-run-100-2026-09-18",
       "name": "Run Rabbit Run 100",
       "date": "2026-09-18",
@@ -1028,28 +806,6 @@
       "currency": null,
       "registrationStatus": null,
       "availableDistances": null,
-      "gpxUrl": null
-    },
-    {
-      "id": "eco-trail-morocco-2025--ouarzazate-2026-09-21",
-      "name": "Eco Trail Morocco 2025 – Ouarzazate",
-      "date": "2026-09-21",
-      "city": "Ouarzazate",
-      "country": "Morocco",
-      "countryCode": "MA",
-      "discipline": "Trail",
-      "distance": "30km",
-      "elevationGain": null,
-      "description": "Distances: 30km, 70km",
-      "registrationUrl": "https://moov.ma/course/eco-trail-morocco-2025-ouarzazate/",
-      "imageUrl": "https://moov.ma/wp-content/uploads/2025/09/ecotrail-768x512.jpg",
-      "price": null,
-      "currency": "MAD",
-      "registrationStatus": "Open",
-      "availableDistances": [
-        "30km",
-        "70km"
-      ],
       "gpxUrl": null
     },
     {
@@ -1129,143 +885,6 @@
       "gpxUrl": null
     },
     {
-      "id": "race-desert-morocco--8ème-édition-2026-10-03",
-      "name": "Race Desert Morocco – 8ème édition",
-      "date": "2026-10-03",
-      "city": "Merzouga",
-      "country": "Morocco",
-      "countryCode": "MA",
-      "discipline": "Running",
-      "distance": "100km",
-      "elevationGain": null,
-      "description": "Distances: 100km, 20km, 35km, 45km",
-      "registrationUrl": "https://moov.ma/course/race-desert-morocco-8eme-edition/",
-      "imageUrl": "https://moov.ma/wp-content/uploads/2025/09/rdm-768x1086.jpg",
-      "price": null,
-      "currency": "MAD",
-      "registrationStatus": "Open",
-      "availableDistances": [
-        "100km",
-        "20km",
-        "35km",
-        "45km"
-      ],
-      "gpxUrl": null
-    },
-    {
-      "id": "la-kéchoise--5ème-édition-2026-10-05",
-      "name": "La Kéchoise – 5ème édition",
-      "date": "2026-10-05",
-      "city": "",
-      "country": "Morocco",
-      "countryCode": "MA",
-      "discipline": "Running",
-      "distance": "7km",
-      "elevationGain": null,
-      "description": "Distances: 7km",
-      "registrationUrl": "https://moov.ma/course/la-kechoise-5e-edition/",
-      "imageUrl": "https://moov.ma/wp-content/uploads/2025/09/kechoise-768x768.jpg",
-      "price": null,
-      "currency": "MAD",
-      "registrationStatus": "Open",
-      "availableDistances": [
-        "7km"
-      ],
-      "gpxUrl": null
-    },
-    {
-      "id": "green-run-2025-2026-10-05",
-      "name": "Green Run 2025",
-      "date": "2026-10-05",
-      "city": "Rabat",
-      "country": "Morocco",
-      "countryCode": "MA",
-      "discipline": "Running",
-      "distance": "21km",
-      "elevationGain": null,
-      "description": "Distances: 21km, 15km, 10km",
-      "registrationUrl": "https://moov.ma/course/green-run-2025/",
-      "imageUrl": "https://moov.ma/wp-content/uploads/2025/09/green-run-768x960.jpg",
-      "price": null,
-      "currency": "MAD",
-      "registrationStatus": "Open",
-      "availableDistances": [
-        "21km",
-        "15km",
-        "10km"
-      ],
-      "gpxUrl": null
-    },
-    {
-      "id": "trail-kandar-sidi-khiar-2025-2026-10-05",
-      "name": "Trail Kandar Sidi Khiar 2025",
-      "date": "2026-10-05",
-      "city": "No Venue Found",
-      "country": "Morocco",
-      "countryCode": "MA",
-      "discipline": "Trail",
-      "distance": "12km",
-      "elevationGain": null,
-      "description": "Distances: 12km, 25km",
-      "registrationUrl": "https://moov.ma/course/trail-kandar-sidi-khiar-2025/",
-      "imageUrl": "https://moov.ma/wp-content/uploads/2025/09/Affiche_slider_trail.avatar_desktop.png",
-      "price": null,
-      "currency": "MAD",
-      "registrationStatus": "Open",
-      "availableDistances": [
-        "12km",
-        "25km"
-      ],
-      "gpxUrl": null
-    },
-    {
-      "id": "atlas-marathon-2025--vallée-daït-bouguemez-2026-10-09",
-      "name": "Atlas Marathon 2025 – Vallée d’Aït Bouguemez",
-      "date": "2026-10-09",
-      "city": "Aït Bouguemez",
-      "country": "Morocco",
-      "countryCode": "MA",
-      "discipline": "Running",
-      "distance": "42km",
-      "elevationGain": null,
-      "description": "Distances: 42km, 21km, 10km, 27km",
-      "registrationUrl": "https://moov.ma/course/atlas-marathon-2025-vallee-dait-bouguemez/",
-      "imageUrl": "https://moov.ma/wp-content/uploads/2025/09/5CfgNEv-768x1081.jpeg",
-      "price": null,
-      "currency": "MAD",
-      "registrationStatus": "Open",
-      "availableDistances": [
-        "42km",
-        "21km",
-        "10km",
-        "27km"
-      ],
-      "gpxUrl": null
-    },
-    {
-      "id": "course-les-darbistes--10e-édition-2026-10-11",
-      "name": "Course Les Darbistes – 10e édition",
-      "date": "2026-10-11",
-      "city": "Casablanca",
-      "country": "Morocco",
-      "countryCode": "MA",
-      "discipline": "Running",
-      "distance": "10km",
-      "elevationGain": null,
-      "description": "Distances: 10km, 5km, 10miles",
-      "registrationUrl": "https://moov.ma/course/course-les-darbistes-10e-edition/",
-      "imageUrl": "https://moov.ma/wp-content/uploads/2025/07/affiche-a4azfou-scaled-1-768x1086.jpg",
-      "price": null,
-      "currency": "MAD",
-      "registrationStatus": "Open",
-      "availableDistances": [
-        "10km",
-        "5km",
-        "10miles"
-      ],
-      "gpxUrl": null
-    },
-    {
       "id": "grand-raid-de-la-réunion-2026-10-15",
       "name": "Grand Raid de la Réunion",
       "date": "2026-10-15",
@@ -1304,28 +923,6 @@
       "gpxUrl": null
     },
     {
-      "id": "trail-ait-ben-haddou--8e-édition-2026-10-18",
-      "name": "Trail Ait Ben Haddou – 8e édition",
-      "date": "2026-10-18",
-      "city": "Ouarzazate",
-      "country": "Morocco",
-      "countryCode": "MA",
-      "discipline": "Trail",
-      "distance": "10km",
-      "elevationGain": null,
-      "description": "Distances: 10km, 50km",
-      "registrationUrl": "https://moov.ma/course/trail-ait-ben-haddou-8e-edition/",
-      "imageUrl": "https://moov.ma/wp-content/uploads/2025/09/tabh-768x1365.jpg",
-      "price": null,
-      "currency": "MAD",
-      "registrationStatus": "Open",
-      "availableDistances": [
-        "10km",
-        "50km"
-      ],
-      "gpxUrl": null
-    },
-    {
       "id": "trail-des-templiers-2026-10-24",
       "name": "Trail des Templiers",
       "date": "2026-10-24",
@@ -1342,27 +939,6 @@
       "currency": null,
       "registrationStatus": null,
       "availableDistances": null,
-      "gpxUrl": null
-    },
-    {
-      "id": "ironman-703-agadir--fun-run-2026-10-25",
-      "name": "IRONMAN 70.3 Agadir – Fun Run",
-      "date": "2026-10-25",
-      "city": "Agadir",
-      "country": "Morocco",
-      "countryCode": "MA",
-      "discipline": "Triathlon",
-      "distance": "5km",
-      "elevationGain": null,
-      "description": "Distances: 5km",
-      "registrationUrl": "https://moov.ma/course/ironman-70-3-agadir-fun-run/",
-      "imageUrl": "https://moov.ma/wp-content/uploads/2025/09/fun.webp",
-      "price": null,
-      "currency": "MAD",
-      "registrationStatus": "Open",
-      "availableDistances": [
-        "5km"
-      ],
       "gpxUrl": null
     },
     {
@@ -1385,28 +961,6 @@
         "1.9km Swim",
         "90km Bike",
         "21.1km Run"
-      ],
-      "gpxUrl": null
-    },
-    {
-      "id": "marathon-international-de-casablanca--16e-édition-2026-10-26",
-      "name": "Marathon International de Casablanca – 16e édition",
-      "date": "2026-10-26",
-      "city": "Casablanca",
-      "country": "Morocco",
-      "countryCode": "MA",
-      "discipline": "Running",
-      "distance": "42km",
-      "elevationGain": null,
-      "description": "Distances: 42km, 21km",
-      "registrationUrl": "https://moov.ma/course/marathon-international-de-casablanca-16eme-edition/",
-      "imageUrl": "https://moov.ma/wp-content/uploads/2025/06/mic-768x1127.jpeg",
-      "price": null,
-      "currency": "MAD",
-      "registrationStatus": "Open",
-      "availableDistances": [
-        "42km",
-        "21km"
       ],
       "gpxUrl": null
     },
@@ -1446,50 +1000,6 @@
       "currency": null,
       "registrationStatus": null,
       "availableDistances": null,
-      "gpxUrl": null
-    },
-    {
-      "id": "sahara-trail-2025--zagora-2026-11-01",
-      "name": "Sahara Trail 2025 – Zagora",
-      "date": "2026-11-01",
-      "city": "Zagora",
-      "country": "Morocco",
-      "countryCode": "MA",
-      "discipline": "Trail",
-      "distance": "105km",
-      "elevationGain": null,
-      "description": "Distances: 105km",
-      "registrationUrl": "https://moov.ma/course/sahara-trail-2025-zagora/",
-      "imageUrl": "https://moov.ma/wp-content/uploads/2025/09/sahara-trail-zagora-768x1086.jpg",
-      "price": null,
-      "currency": "MAD",
-      "registrationStatus": "Open",
-      "availableDistances": [
-        "105km"
-      ],
-      "gpxUrl": null
-    },
-    {
-      "id": "itzer-trail-lac-sidi-ali-2026-11-15",
-      "name": "Itzer Trail Lac Sidi Ali",
-      "date": "2026-11-15",
-      "city": "Aguelmame Sidi Ali",
-      "country": "Morocco",
-      "countryCode": "MA",
-      "discipline": "Trail",
-      "distance": "42km",
-      "elevationGain": null,
-      "description": "Distances: 42km, 21km, 10km",
-      "registrationUrl": "https://moov.ma/course/itzer-trail-lac-sidi-ali/",
-      "imageUrl": "https://moov.ma/wp-content/uploads/2024/11/9eme-itzer-trail-1-768x1080.png",
-      "price": null,
-      "currency": "MAD",
-      "registrationStatus": "Open",
-      "availableDistances": [
-        "42km",
-        "21km",
-        "10km"
-      ],
       "gpxUrl": null
     },
     {
@@ -1550,51 +1060,6 @@
       "gpxUrl": null
     },
     {
-      "id": "trail-desert-dagafay-2026-11-29",
-      "name": "Trail Desert d’Agafay",
-      "date": "2026-11-29",
-      "city": "Marrakech",
-      "country": "Morocco",
-      "countryCode": "MA",
-      "discipline": "Trail",
-      "distance": "42km",
-      "elevationGain": null,
-      "description": "Distances: 42km, 23km, 11km",
-      "registrationUrl": "https://moov.ma/course/1878/",
-      "imageUrl": "https://moov.ma/wp-content/uploads/2024/10/trail-desert-agafay-768x768.jpg",
-      "price": null,
-      "currency": "MAD",
-      "registrationStatus": "Open",
-      "availableDistances": [
-        "42km",
-        "23km",
-        "11km"
-      ],
-      "gpxUrl": null
-    },
-    {
-      "id": "darb-race-2026-11-30",
-      "name": "Darb Race",
-      "date": "2026-11-30",
-      "city": "Casablanca",
-      "country": "Morocco",
-      "countryCode": "MA",
-      "discipline": "Running",
-      "distance": "21km",
-      "elevationGain": null,
-      "description": "Distances: 21km, 10km",
-      "registrationUrl": "https://moov.ma/course/darb-race/",
-      "imageUrl": "https://moov.ma/wp-content/uploads/2024/10/darbevent2-768x1076.jpg",
-      "price": null,
-      "currency": "MAD",
-      "registrationStatus": "Open",
-      "availableDistances": [
-        "21km",
-        "10km"
-      ],
-      "gpxUrl": null
-    },
-    {
       "id": "patagonman-2026-12-06",
       "name": "Patagonman",
       "date": "2026-12-06",
@@ -1650,32 +1115,9 @@
       "registrationStatus": null,
       "availableDistances": null,
       "gpxUrl": null
-    },
-    {
-      "id": "casa-downtown-race-2026-12-13",
-      "name": "Casa Downtown Race",
-      "date": "2026-12-13",
-      "city": "Casablanca",
-      "country": "Morocco",
-      "countryCode": "MA",
-      "discipline": "Running",
-      "distance": "10km",
-      "elevationGain": null,
-      "description": "Distances: 10km, 5km, Kids Run",
-      "registrationUrl": "https://moov.ma/course/casa-downtown-race/",
-      "imageUrl": "https://moov.ma/wp-content/uploads/2024/11/cdr-768x768.jpg",
-      "price": null,
-      "currency": "MAD",
-      "registrationStatus": "Open",
-      "availableDistances": [
-        "10km",
-        "5km",
-        "Kids Run"
-      ],
-      "gpxUrl": null
     }
   ],
-  "lastAudit": "2026-02-20T08:00:36.370149",
-  "gpxUpdate": "2026-02-20 08:00:36",
-  "lastValidation": "2026-02-20T08:00:49.994427"
+  "lastAudit": "2026-02-21T07:44:55.815594",
+  "gpxUpdate": "2026-02-21 07:44:55",
+  "lastValidation": "2026-02-21T07:45:07.393262"
 }
