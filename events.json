@@ -1,28 +1,7 @@
 {
-  "lastUpdated": "2026-03-01T07:48:12.780927",
-  "totalEvents": 83,
+  "lastUpdated": "2026-03-02T07:04:28.985780",
+  "totalEvents": 82,
   "events": [
-    {
-      "id": "tokyo-marathon-2026-2026-03-01",
-      "name": "Tokyo Marathon 2026",
-      "date": "2026-03-01",
-      "city": "Tokyo",
-      "country": "Japan",
-      "countryCode": "JP",
-      "discipline": "Running",
-      "distance": "Marathon",
-      "elevationGain": null,
-      "description": "One of the six World Marathon Majors, known for its flat course and enthusiastic crowd.",
-      "registrationUrl": "https://www.marathon.tokyo/en/",
-      "imageUrl": "tokyo_marathon_2026",
-      "price": null,
-      "currency": "EUR",
-      "registrationStatus": "Open",
-      "availableDistances": [
-        "42.2km"
-      ],
-      "gpxUrl": "https://www.marathon.tokyo/en/about/course/"
-    },
     {
       "id": "nomads-ultra-trail-2026-03-20",
       "name": "Nomads Ultra Trail",
@@ -816,7 +795,7 @@
       "currency": null,
       "registrationStatus": null,
       "availableDistances": null,
-      "gpxUrl": null
+      "gpxUrl": "https://www.sierre-zinal.com/en/course-map-gpx-21.html"
     },
     {
       "id": "leadville-trail-100-2026-08-22",
@@ -1679,7 +1658,7 @@
       "gpxUrl": null
     }
   ],
-  "lastAudit": "2026-03-01T07:48:12.787398",
-  "gpxUpdate": "2026-03-01 07:48:12",
-  "lastValidation": "2026-03-01T07:48:27.674745"
+  "lastAudit": "2026-03-02T07:04:28.992193",
+  "gpxUpdate": "2026-03-02 07:04:28",
+  "lastValidation": "2026-03-02T07:04:42.953030"
 }
