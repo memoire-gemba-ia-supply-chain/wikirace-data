@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-03-31T07:21:51.847190",
-  "totalEvents": 80,
+  "lastUpdated": "2026-04-01T07:27:28.450090",
+  "totalEvents": 81,
   "events": [
     {
       "id": "two-oceans-marathon-2026-04-04",
@@ -1618,9 +1618,33 @@
         "Kids Run"
       ],
       "gpxUrl": null
+    },
+    {
+      "id": "marathon-spirituel-de-fès-2027-02-15",
+      "name": "Marathon Spirituel de Fès",
+      "date": "2027-02-15",
+      "city": "Fès",
+      "country": "Morocco",
+      "countryCode": "MA",
+      "discipline": "Running",
+      "distance": "42km",
+      "elevationGain": null,
+      "description": "Distances: 42km, 21km, 10km, Kids Run",
+      "registrationUrl": "https://moov.ma/course/marathon-spirituel-de-fes/",
+      "imageUrl": "https://moov.ma/wp-content/uploads/2024/11/FEZ-2-768x512.jpg.webp",
+      "price": null,
+      "currency": "MAD",
+      "registrationStatus": "Open",
+      "availableDistances": [
+        "42km",
+        "21km",
+        "10km",
+        "Kids Run"
+      ],
+      "gpxUrl": null
     }
   ],
-  "lastAudit": "2026-03-31T07:21:51.853081",
-  "gpxUpdate": "2026-03-31 07:21:51",
-  "lastValidation": "2026-03-31T07:22:08.822593"
+  "lastAudit": "2026-04-01T07:27:28.456378",
+  "gpxUpdate": "2026-04-01 07:27:28",
+  "lastValidation": "2026-04-01T07:27:45.752997"
 }
