@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-01T07:27:28.450090",
+  "lastUpdated": "2026-04-02T07:19:19.377810",
   "totalEvents": 81,
   "events": [
     {
@@ -1151,7 +1151,7 @@
       "distance": "42km",
       "elevationGain": null,
       "description": "Distances: 42km, 21km, 10km, 27km",
-      "registrationUrl": "https://moov.ma/course/atlas-marathon-2025-vallee-dait-bouguemez/",
+      "registrationUrl": "https://example.com",
       "imageUrl": "https://moov.ma/wp-content/uploads/2025/09/5CfgNEv-768x1081.jpeg.webp",
       "price": null,
       "currency": "MAD",
@@ -1644,7 +1644,7 @@
       "gpxUrl": null
     }
   ],
-  "lastAudit": "2026-04-01T07:27:28.456378",
-  "gpxUpdate": "2026-04-01 07:27:28",
-  "lastValidation": "2026-04-01T07:27:45.752997"
+  "lastAudit": "2026-04-02T07:19:19.384549",
+  "gpxUpdate": "2026-04-02 07:19:19",
+  "lastValidation": "2026-04-02T07:19:42.817625"
 }
