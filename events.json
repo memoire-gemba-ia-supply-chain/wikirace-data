@@ -1,26 +1,7 @@
 {
-  "lastUpdated": "2026-04-05T07:13:13.587383",
-  "totalEvents": 80,
+  "lastUpdated": "2026-04-06T07:50:06.725580",
+  "totalEvents": 79,
   "events": [
-    {
-      "id": "eco-trail-ouarzazate-2026-04-05",
-      "name": "Eco Trail Ouarzazate",
-      "date": "2026-04-05",
-      "city": "Ouarzazate",
-      "country": "Morocco",
-      "countryCode": "MA",
-      "discipline": "Trail",
-      "distance": "Ultra Trail",
-      "elevationGain": 1200,
-      "description": "Major trail event in Ouarzazate, part of international circuits.",
-      "registrationUrl": "https://itra.run",
-      "imageUrl": "eco_trail_ouarzazate",
-      "price": null,
-      "currency": null,
-      "registrationStatus": null,
-      "availableDistances": null,
-      "gpxUrl": null
-    },
     {
       "id": "zion-100-2026-04-10",
       "name": "Zion 100",
@@ -1625,7 +1606,7 @@
       "gpxUrl": null
     }
   ],
-  "lastAudit": "2026-04-05T07:13:13.593836",
-  "gpxUpdate": "2026-04-05 07:13:13",
-  "lastValidation": "2026-04-05T07:13:31.549467"
+  "lastAudit": "2026-04-06T07:50:06.731811",
+  "gpxUpdate": "2026-04-06 07:50:06",
+  "lastValidation": "2026-04-06T07:50:24.097435"
 }
