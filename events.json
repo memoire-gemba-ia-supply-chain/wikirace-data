@@ -1,45 +1,7 @@
 {
-  "lastUpdated": "2026-04-10T07:48:21.215479",
-  "totalEvents": 79,
+  "lastUpdated": "2026-04-11T07:06:03.627129",
+  "totalEvents": 77,
   "events": [
-    {
-      "id": "zion-100-2026-04-10",
-      "name": "Zion 100",
-      "date": "2026-04-10",
-      "city": "Zion",
-      "country": "USA",
-      "countryCode": "US",
-      "discipline": "Trail",
-      "distance": "Ultra Trail",
-      "elevationGain": null,
-      "description": "Major ultra-marathon in Zion, known for its extreme difficulty and beauty.",
-      "registrationUrl": "https://ultrasignup.com",
-      "imageUrl": "zion_100",
-      "price": null,
-      "currency": null,
-      "registrationStatus": null,
-      "availableDistances": null,
-      "gpxUrl": null
-    },
-    {
-      "id": "marathon-des-sables-2026-04-10",
-      "name": "Marathon des Sables",
-      "date": "2026-04-10",
-      "city": "Sahara Desert",
-      "country": "Morocco",
-      "countryCode": "MA",
-      "discipline": "Trail",
-      "distance": "Ultra Trail",
-      "elevationGain": null,
-      "description": "Major ultra-marathon in Sahara Desert, known for its extreme difficulty and beauty.",
-      "registrationUrl": "https://ultrasignup.com",
-      "imageUrl": "marathon_des_sables",
-      "price": null,
-      "currency": null,
-      "registrationStatus": null,
-      "availableDistances": null,
-      "gpxUrl": null
-    },
     {
       "id": "lake-sonoma-50-2026-04-11",
       "name": "Lake Sonoma 50",
@@ -1606,7 +1568,7 @@
       "gpxUrl": null
     }
   ],
-  "lastAudit": "2026-04-10T07:48:21.221765",
-  "gpxUpdate": "2026-04-10 07:48:21",
-  "lastValidation": "2026-04-10T07:48:35.114127"
+  "lastAudit": "2026-04-11T07:06:03.668702",
+  "gpxUpdate": "2026-04-11 07:06:03",
+  "lastValidation": "2026-04-11T07:06:15.043356"
 }
