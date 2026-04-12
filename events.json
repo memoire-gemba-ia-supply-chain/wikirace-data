@@ -1,26 +1,7 @@
 {
-  "lastUpdated": "2026-04-11T07:06:03.627129",
-  "totalEvents": 77,
+  "lastUpdated": "2026-04-12T07:20:25.681720",
+  "totalEvents": 76,
   "events": [
-    {
-      "id": "lake-sonoma-50-2026-04-11",
-      "name": "Lake Sonoma 50",
-      "date": "2026-04-11",
-      "city": "Healdsburg",
-      "country": "USA",
-      "countryCode": "US",
-      "discipline": "Trail",
-      "distance": "Ultra Trail",
-      "elevationGain": null,
-      "description": "Major ultra-marathon in Healdsburg, known for its extreme difficulty and beauty.",
-      "registrationUrl": "https://ultrasignup.com",
-      "imageUrl": "lake_sonoma_50",
-      "price": null,
-      "currency": null,
-      "registrationStatus": null,
-      "availableDistances": null,
-      "gpxUrl": null
-    },
     {
       "id": "schneider-electric-paris-marathon-2026-2026-04-12",
       "name": "Schneider Electric Paris Marathon 2026",
@@ -1568,7 +1549,7 @@
       "gpxUrl": null
     }
   ],
-  "lastAudit": "2026-04-11T07:06:03.668702",
-  "gpxUpdate": "2026-04-11 07:06:03",
-  "lastValidation": "2026-04-11T07:06:15.043356"
+  "lastAudit": "2026-04-12T07:20:25.687725",
+  "gpxUpdate": "2026-04-12 07:20:25",
+  "lastValidation": "2026-04-12T07:20:38.593439"
 }
