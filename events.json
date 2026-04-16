@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-15T07:54:43.629393",
+  "lastUpdated": "2026-04-16T07:54:22.472537",
   "totalEvents": 75,
   "events": [
     {
@@ -34,7 +34,7 @@
       "distance": "Ultra Trail",
       "elevationGain": 8000,
       "description": "Major trail event in Mount Fuji, part of international circuits.",
-      "registrationUrl": "https://example.com",
+      "registrationUrl": "https://itra.run",
       "imageUrl": "ultra-trail_mount_fuji",
       "price": null,
       "currency": null,
@@ -53,7 +53,7 @@
       "distance": "Ultra Trail",
       "elevationGain": 7100,
       "description": "Major trail event in Madeira, part of international circuits.",
-      "registrationUrl": "https://example.com",
+      "registrationUrl": "https://itra.run",
       "imageUrl": "madeira_island_ultra_trail",
       "price": null,
       "currency": null,
@@ -72,7 +72,7 @@
       "distance": "Ultra Trail",
       "elevationGain": 4500,
       "description": "Major trail event in Auburn, part of international circuits.",
-      "registrationUrl": "https://example.com",
+      "registrationUrl": "https://itra.run",
       "imageUrl": "the_canyons_endurance_runs",
       "price": null,
       "currency": null,
@@ -135,7 +135,7 @@
       "distance": "Ultra Trail",
       "elevationGain": 4400,
       "description": "Major trail event in Blue Mountains, part of international circuits.",
-      "registrationUrl": "https://example.com",
+      "registrationUrl": "https://itra.run",
       "imageUrl": "ultra-trail_australia",
       "price": null,
       "currency": null,
@@ -154,7 +154,7 @@
       "distance": "Ultra Trail",
       "elevationGain": 2500,
       "description": "Major trail event in Ifrane, part of international circuits.",
-      "registrationUrl": "https://example.com",
+      "registrationUrl": "https://itra.run",
       "imageUrl": "ultra_trail_des_cèdres",
       "price": null,
       "currency": null,
@@ -173,7 +173,7 @@
       "distance": "Ultra Trail",
       "elevationGain": 12000,
       "description": "Major trail event in Atlas Mountains, part of international circuits.",
-      "registrationUrl": "https://example.com",
+      "registrationUrl": "https://itra.run",
       "imageUrl": "trans_atlas_marathon",
       "price": null,
       "currency": null,
@@ -192,7 +192,7 @@
       "distance": "Ultra Trail",
       "elevationGain": 2736,
       "description": "Major trail event in Zegama, part of international circuits.",
-      "registrationUrl": "https://example.com",
+      "registrationUrl": "https://itra.run",
       "imageUrl": "zegama-aizkorri",
       "price": null,
       "currency": null,
@@ -287,7 +287,7 @@
       "distance": "Ultra Trail",
       "elevationGain": 5800,
       "description": "Major trail event in Cortina, part of international circuits.",
-      "registrationUrl": "https://example.com",
+      "registrationUrl": "https://itra.run",
       "imageUrl": "lavaredo_ultra_trail",
       "price": null,
       "currency": null,
@@ -325,7 +325,7 @@
       "distance": "Ultra Trail",
       "elevationGain": 5500,
       "description": "Major trail event in Squaw Valley, part of international circuits.",
-      "registrationUrl": "https://example.com",
+      "registrationUrl": "https://itra.run",
       "imageUrl": "western_states_100",
       "price": null,
       "currency": null,
@@ -1528,7 +1528,7 @@
       "gpxUrl": null
     }
   ],
-  "lastAudit": "2026-04-15T07:54:43.634215",
-  "gpxUpdate": "2026-04-15 07:54:43",
-  "lastValidation": "2026-04-15T07:55:09.133341"
+  "lastAudit": "2026-04-16T07:54:22.478711",
+  "gpxUpdate": "2026-04-16 07:54:22",
+  "lastValidation": "2026-04-16T07:54:34.905331"
 }
