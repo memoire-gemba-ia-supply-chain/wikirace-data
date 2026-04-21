@@ -1,28 +1,7 @@
 {
-  "lastUpdated": "2026-04-20T08:27:05.388243",
-  "totalEvents": 75,
+  "lastUpdated": "2026-04-21T07:59:22.982517",
+  "totalEvents": 74,
   "events": [
-    {
-      "id": "boston-marathon-2026-2026-04-20",
-      "name": "Boston Marathon 2026",
-      "date": "2026-04-20",
-      "city": "Boston",
-      "country": "USA",
-      "countryCode": "US",
-      "discipline": "Running",
-      "distance": "Marathon",
-      "elevationGain": null,
-      "description": "The world's oldest annual marathon. A point-to-point course from Hopkinton to Copley Square.",
-      "registrationUrl": "https://www.baa.org/races/boston-marathon",
-      "imageUrl": "boston_marathon_2026",
-      "price": null,
-      "currency": "USD",
-      "registrationStatus": "Open",
-      "availableDistances": [
-        "42.2km"
-      ],
-      "gpxUrl": "https://www.baa.org/races/boston-marathon/enter/course-information"
-    },
     {
       "id": "ultra-trail-mount-fuji-2026-04-24",
       "name": "Ultra-Trail Mount Fuji",
@@ -1528,7 +1507,7 @@
       "gpxUrl": null
     }
   ],
-  "lastAudit": "2026-04-20T08:27:05.394308",
-  "gpxUpdate": "2026-04-20 08:27:05",
-  "lastValidation": "2026-04-20T08:27:18.786588"
+  "lastAudit": "2026-04-21T07:59:22.987320",
+  "gpxUpdate": "2026-04-21 07:59:22",
+  "lastValidation": "2026-04-21T07:59:36.478723"
 }
