@@ -1,45 +1,7 @@
 {
-  "lastUpdated": "2026-04-25T07:23:42.904423",
-  "totalEvents": 73,
+  "lastUpdated": "2026-04-26T07:45:05.478413",
+  "totalEvents": 71,
   "events": [
-    {
-      "id": "madeira-island-ultra-trail-2026-04-25",
-      "name": "Madeira Island Ultra Trail",
-      "date": "2026-04-25",
-      "city": "Madeira",
-      "country": "Portugal",
-      "countryCode": "PT",
-      "discipline": "Trail",
-      "distance": "Ultra Trail",
-      "elevationGain": 7100,
-      "description": "Major trail event in Madeira, part of international circuits.",
-      "registrationUrl": "https://itra.run",
-      "imageUrl": "madeira_island_ultra_trail",
-      "price": null,
-      "currency": null,
-      "registrationStatus": null,
-      "availableDistances": null,
-      "gpxUrl": null
-    },
-    {
-      "id": "the-canyons-endurance-runs-2026-04-25",
-      "name": "The Canyons Endurance Runs",
-      "date": "2026-04-25",
-      "city": "Auburn",
-      "country": "USA",
-      "countryCode": "US",
-      "discipline": "Trail",
-      "distance": "Ultra Trail",
-      "elevationGain": 4500,
-      "description": "Major trail event in Auburn, part of international circuits.",
-      "registrationUrl": "https://itra.run",
-      "imageUrl": "the_canyons_endurance_runs",
-      "price": null,
-      "currency": null,
-      "registrationStatus": null,
-      "availableDistances": null,
-      "gpxUrl": null
-    },
     {
       "id": "tcs-london-marathon-2026-2026-04-26",
       "name": "TCS London Marathon 2026",
@@ -1488,7 +1450,7 @@
       "gpxUrl": null
     }
   ],
-  "lastAudit": "2026-04-25T07:23:42.910357",
-  "gpxUpdate": "2026-04-25 07:23:42",
-  "lastValidation": "2026-04-25T07:23:51.436745"
+  "lastAudit": "2026-04-26T07:45:05.484322",
+  "gpxUpdate": "2026-04-26 07:45:05",
+  "lastValidation": "2026-04-26T07:45:16.706732"
 }
