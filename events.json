@@ -1,28 +1,7 @@
 {
-  "lastUpdated": "2026-04-26T07:45:05.478413",
-  "totalEvents": 71,
+  "lastUpdated": "2026-04-27T08:32:00.893536",
+  "totalEvents": 70,
   "events": [
-    {
-      "id": "tcs-london-marathon-2026-2026-04-26",
-      "name": "TCS London Marathon 2026",
-      "date": "2026-04-26",
-      "city": "London",
-      "country": "UK",
-      "countryCode": "GB",
-      "discipline": "Running",
-      "distance": "Marathon",
-      "elevationGain": null,
-      "description": "A fast, flat course past London's greatest landmarks.",
-      "registrationUrl": "https://www.tcslondonmarathon.com/",
-      "imageUrl": "tcs_london_marathon_2026",
-      "price": null,
-      "currency": "EUR",
-      "registrationStatus": "Open",
-      "availableDistances": [
-        "42.2km"
-      ],
-      "gpxUrl": "https://www.tcslondonmarathon.com/the-event/the-course"
-    },
     {
       "id": "marathon-international-de-rabat-2025-2026-04-27",
       "name": "Marathon International de Rabat 2025",
@@ -1450,7 +1429,7 @@
       "gpxUrl": null
     }
   ],
-  "lastAudit": "2026-04-26T07:45:05.484322",
-  "gpxUpdate": "2026-04-26 07:45:05",
-  "lastValidation": "2026-04-26T07:45:16.706732"
+  "lastAudit": "2026-04-27T08:32:00.899313",
+  "gpxUpdate": "2026-04-27 08:32:00",
+  "lastValidation": "2026-04-27T08:32:13.387955"
 }
