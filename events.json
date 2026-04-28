@@ -1,30 +1,7 @@
 {
-  "lastUpdated": "2026-04-27T08:32:00.893536",
-  "totalEvents": 70,
+  "lastUpdated": "2026-04-28T08:30:47.536424",
+  "totalEvents": 69,
   "events": [
-    {
-      "id": "marathon-international-de-rabat-2025-2026-04-27",
-      "name": "Marathon International de Rabat 2025",
-      "date": "2026-04-27",
-      "city": "Rabat",
-      "country": "Morocco",
-      "countryCode": "MA",
-      "discipline": "Running",
-      "distance": "42km",
-      "elevationGain": null,
-      "description": "Distances: 42km, 21km, 10km",
-      "registrationUrl": "https://moov.ma/course/marathon-international-de-rabat/",
-      "imageUrl": "https://moov.ma/wp-content/uploads/2024/11/JS6A0247-768x465.jpg",
-      "price": null,
-      "currency": "MAD",
-      "registrationStatus": "Open",
-      "availableDistances": [
-        "42km",
-        "21km",
-        "10km"
-      ],
-      "gpxUrl": null
-    },
     {
       "id": "ultra-trail-australia-2026-05-14",
       "name": "Ultra-Trail Australia",
@@ -1429,7 +1406,7 @@
       "gpxUrl": null
     }
   ],
-  "lastAudit": "2026-04-27T08:32:00.899313",
-  "gpxUpdate": "2026-04-27 08:32:00",
-  "lastValidation": "2026-04-27T08:32:13.387955"
+  "lastAudit": "2026-04-28T08:30:47.542329",
+  "gpxUpdate": "2026-04-28 08:30:47",
+  "lastValidation": "2026-04-28T08:30:58.808428"
 }
