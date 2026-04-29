@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-28T08:30:47.536424",
+  "lastUpdated": "2026-04-29T08:24:30.104027",
   "totalEvents": 69,
   "events": [
     {
@@ -57,7 +57,7 @@
       "currency": null,
       "registrationStatus": null,
       "availableDistances": null,
-      "gpxUrl": "https://transatlasmarathon.com/course-details"
+      "gpxUrl": null
     },
     {
       "id": "zegama-aizkorri-2026-05-24",
@@ -1406,7 +1406,7 @@
       "gpxUrl": null
     }
   ],
-  "lastAudit": "2026-04-28T08:30:47.542329",
-  "gpxUpdate": "2026-04-28 08:30:47",
-  "lastValidation": "2026-04-28T08:30:58.808428"
+  "lastAudit": "2026-04-29T08:24:30.109846",
+  "gpxUpdate": "2026-04-29 08:24:30",
+  "lastValidation": "2026-04-29T08:24:41.504600"
 }
