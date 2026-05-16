@@ -1,26 +1,7 @@
 {
-  "lastUpdated": "2026-05-15T07:17:06.427943",
-  "totalEvents": 82,
+  "lastUpdated": "2026-05-16T06:54:17.290320",
+  "totalEvents": 81,
   "events": [
-    {
-      "id": "ultra-trail-des-cèdres-2026-05-15",
-      "name": "Ultra Trail des Cèdres",
-      "date": "2026-05-15",
-      "city": "Ifrane",
-      "country": "Morocco",
-      "countryCode": "MA",
-      "discipline": "Trail",
-      "distance": "Ultra Trail",
-      "elevationGain": 2500,
-      "description": "Major trail event in Ifrane, part of international circuits.",
-      "registrationUrl": "https://itra.run",
-      "imageUrl": "ultra_trail_des_cèdres",
-      "price": null,
-      "currency": null,
-      "registrationStatus": null,
-      "availableDistances": null,
-      "gpxUrl": null
-    },
     {
       "id": "copenhagen-marathon-2026-05-17",
       "name": "Copenhagen Marathon",
@@ -1565,7 +1546,7 @@
       "gpxUrl": null
     }
   ],
-  "lastAudit": "2026-05-15T07:17:06.434269",
-  "gpxUpdate": "2026-05-15 07:17:06",
-  "lastValidation": "2026-05-15T07:17:22.401037"
+  "lastAudit": "2026-05-16T06:54:17.296507",
+  "gpxUpdate": "2026-05-16 06:54:17",
+  "lastValidation": "2026-05-16T06:54:33.769801"
 }
