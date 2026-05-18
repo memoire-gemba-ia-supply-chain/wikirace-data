@@ -1,45 +1,7 @@
 {
-  "lastUpdated": "2026-05-17T07:06:19.688025",
-  "totalEvents": 81,
+  "lastUpdated": "2026-05-18T07:35:49.416604",
+  "totalEvents": 79,
   "events": [
-    {
-      "id": "copenhagen-marathon-2026-05-17",
-      "name": "Copenhagen Marathon",
-      "date": "2026-05-17",
-      "city": "Copenhagen",
-      "country": "Denmark",
-      "countryCode": "DK",
-      "discipline": "Running",
-      "distance": "Marathon",
-      "elevationGain": null,
-      "description": "Scandinavian spring marathon",
-      "registrationUrl": "https://www.google.com/search?q=Copenhagen+Marathon+registration",
-      "imageUrl": "copenhagen_marathon",
-      "price": null,
-      "currency": null,
-      "registrationStatus": null,
-      "availableDistances": null,
-      "gpxUrl": null
-    },
-    {
-      "id": "lima-marathon-2026-05-17",
-      "name": "Lima Marathon",
-      "date": "2026-05-17",
-      "city": "Lima",
-      "country": "Peru",
-      "countryCode": "PE",
-      "discipline": "Running",
-      "distance": "Marathon",
-      "elevationGain": null,
-      "description": "Pacific coast South America",
-      "registrationUrl": "https://www.google.com/search?q=Lima+Marathon+registration",
-      "imageUrl": "lima_marathon",
-      "price": null,
-      "currency": null,
-      "registrationStatus": null,
-      "availableDistances": null,
-      "gpxUrl": null
-    },
     {
       "id": "trans-atlas-marathon-2026-05-18",
       "name": "Trans Atlas Marathon",
@@ -1546,7 +1508,7 @@
       "gpxUrl": null
     }
   ],
-  "lastAudit": "2026-05-17T07:06:19.694175",
-  "gpxUpdate": "2026-05-17 07:06:19",
-  "lastValidation": "2026-05-17T07:06:36.273590"
+  "lastAudit": "2026-05-18T07:35:49.422268",
+  "gpxUpdate": "2026-05-18 07:35:49",
+  "lastValidation": "2026-05-18T07:36:05.661301"
 }
