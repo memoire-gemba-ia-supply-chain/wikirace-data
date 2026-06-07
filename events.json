@@ -1,26 +1,7 @@
 {
-  "lastUpdated": "2026-06-06T07:13:13.556539",
-  "totalEvents": 38,
+  "lastUpdated": "2026-06-07T07:33:11.583225",
+  "totalEvents": 37,
   "events": [
-    {
-      "id": "san-diego-100-2026-06-06",
-      "name": "San Diego 100",
-      "date": "2026-06-06",
-      "city": "Lake Cuyamaca",
-      "country": "USA",
-      "countryCode": "US",
-      "discipline": "Trail",
-      "distance": "Ultra Trail",
-      "elevationGain": null,
-      "description": "Major ultra-marathon in Lake Cuyamaca, known for its extreme difficulty and beauty.",
-      "registrationUrl": "https://ultrasignup.com",
-      "imageUrl": "san_diego_100",
-      "price": null,
-      "currency": null,
-      "registrationStatus": null,
-      "availableDistances": null,
-      "gpxUrl": null
-    },
     {
       "id": "comrades-marathon-2026-06-14",
       "name": "Comrades Marathon",
@@ -729,7 +710,7 @@
       "gpxUrl": null
     }
   ],
-  "lastAudit": "2026-06-06T07:13:13.560169",
-  "gpxUpdate": "2026-06-06 07:13:13",
-  "lastValidation": "2026-06-06T07:13:19.674070"
+  "lastAudit": "2026-06-07T07:33:11.586709",
+  "gpxUpdate": "2026-06-07 07:33:11",
+  "lastValidation": "2026-06-07T07:33:16.996434"
 }
