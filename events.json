@@ -1,26 +1,7 @@
 {
-  "lastUpdated": "2026-06-14T07:45:07.168180",
-  "totalEvents": 37,
+  "lastUpdated": "2026-06-15T08:14:49.398415",
+  "totalEvents": 36,
   "events": [
-    {
-      "id": "comrades-marathon-2026-06-14",
-      "name": "Comrades Marathon",
-      "date": "2026-06-14",
-      "city": "Durban",
-      "country": "South Africa",
-      "countryCode": "ZA",
-      "discipline": "Trail",
-      "distance": "Ultra Trail",
-      "elevationGain": null,
-      "description": "Major ultra-marathon in Durban, known for its extreme difficulty and beauty.",
-      "registrationUrl": "https://ultrasignup.com",
-      "imageUrl": "comrades_marathon",
-      "price": null,
-      "currency": null,
-      "registrationStatus": null,
-      "availableDistances": null,
-      "gpxUrl": null
-    },
     {
       "id": "zugspitz-supertrail-2026-06-19",
       "name": "Zugspitz Supertrail",
@@ -710,7 +691,7 @@
       "gpxUrl": null
     }
   ],
-  "lastAudit": "2026-06-14T07:45:07.171833",
-  "gpxUpdate": "2026-06-14 07:45:07",
-  "lastValidation": "2026-06-14T07:45:18.401340"
+  "lastAudit": "2026-06-15T08:14:49.402107",
+  "gpxUpdate": "2026-06-15 08:14:49",
+  "lastValidation": "2026-06-15T08:14:55.321612"
 }
