@@ -1,26 +1,7 @@
 {
-  "lastUpdated": "2026-06-25T07:21:51.404179",
-  "totalEvents": 35,
+  "lastUpdated": "2026-06-26T07:27:57.855856",
+  "totalEvents": 34,
   "events": [
-    {
-      "id": "lavaredo-ultra-trail-2026-06-25",
-      "name": "Lavaredo Ultra Trail",
-      "date": "2026-06-25",
-      "city": "Cortina",
-      "country": "Italy",
-      "countryCode": "IT",
-      "discipline": "Trail",
-      "distance": "Ultra Trail",
-      "elevationGain": 5800,
-      "description": "Major trail event in Cortina, part of international circuits.",
-      "registrationUrl": "https://itra.run",
-      "imageUrl": "lavaredo_ultra_trail",
-      "price": null,
-      "currency": null,
-      "registrationStatus": null,
-      "availableDistances": null,
-      "gpxUrl": null
-    },
     {
       "id": "lavaredo-ultra-trail-2026-06-26",
       "name": "Lavaredo Ultra Trail",
@@ -672,7 +653,7 @@
       "gpxUrl": null
     }
   ],
-  "lastAudit": "2026-06-25T07:21:51.407812",
-  "gpxUpdate": "2026-06-25 07:21:51",
-  "lastValidation": "2026-06-25T07:21:56.738316"
+  "lastAudit": "2026-06-26T07:27:57.858740",
+  "gpxUpdate": "2026-06-26 07:27:57",
+  "lastValidation": "2026-06-26T07:28:03.653590"
 }
