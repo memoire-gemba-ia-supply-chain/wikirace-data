@@ -1,26 +1,7 @@
 {
-  "lastUpdated": "2026-06-27T07:13:46.707097",
-  "totalEvents": 33,
+  "lastUpdated": "2026-06-28T07:30:03.125631",
+  "totalEvents": 32,
   "events": [
-    {
-      "id": "western-states-100-2026-06-27",
-      "name": "Western States 100",
-      "date": "2026-06-27",
-      "city": "Squaw Valley",
-      "country": "USA",
-      "countryCode": "US",
-      "discipline": "Trail",
-      "distance": "Ultra Trail",
-      "elevationGain": 5500,
-      "description": "Major trail event in Squaw Valley, part of international circuits.",
-      "registrationUrl": "https://itra.run",
-      "imageUrl": "western_states_100",
-      "price": null,
-      "currency": null,
-      "registrationStatus": null,
-      "availableDistances": null,
-      "gpxUrl": null
-    },
     {
       "id": "andorra-ultra-trail-2026-07-03",
       "name": "Andorra Ultra Trail",
@@ -152,7 +133,7 @@
       "currency": null,
       "registrationStatus": null,
       "availableDistances": null,
-      "gpxUrl": "https://www.sierre-zinal.com/en/course-map-gpx-21.html"
+      "gpxUrl": null
     },
     {
       "id": "leadville-trail-100-2026-08-22",
@@ -634,7 +615,7 @@
       "gpxUrl": null
     }
   ],
-  "lastAudit": "2026-06-27T07:13:46.710520",
-  "gpxUpdate": "2026-06-27 07:13:46",
-  "lastValidation": "2026-06-27T07:13:52.591294"
+  "lastAudit": "2026-06-28T07:30:03.128389",
+  "gpxUpdate": "2026-06-28 07:30:03",
+  "lastValidation": "2026-06-28T07:30:14.419434"
 }
