@@ -1,26 +1,7 @@
 {
-  "lastUpdated": "2026-07-03T09:23:49.435651",
-  "totalEvents": 32,
+  "lastUpdated": "2026-07-04T08:42:06.191703",
+  "totalEvents": 31,
   "events": [
-    {
-      "id": "andorra-ultra-trail-2026-07-03",
-      "name": "Andorra Ultra Trail",
-      "date": "2026-07-03",
-      "city": "Ordino",
-      "country": "Andorra",
-      "countryCode": "AD",
-      "discipline": "Trail",
-      "distance": "Ultra Trail",
-      "elevationGain": null,
-      "description": "Major ultra-marathon in Ordino, known for its extreme difficulty and beauty.",
-      "registrationUrl": "https://ultrasignup.com",
-      "imageUrl": "andorra_ultra_trail",
-      "price": null,
-      "currency": null,
-      "registrationStatus": null,
-      "availableDistances": null,
-      "gpxUrl": null
-    },
     {
       "id": "grand-raid-di-cromagnon-2026-07-04",
       "name": "Grand Raid di Cromagnon",
@@ -615,7 +596,7 @@
       "gpxUrl": null
     }
   ],
-  "lastAudit": "2026-07-03T09:23:49.438834",
-  "gpxUpdate": "2026-07-03 09:23:49",
-  "lastValidation": "2026-07-03T09:23:54.970404"
+  "lastAudit": "2026-07-04T08:42:06.194374",
+  "gpxUpdate": "2026-07-04 08:42:06",
+  "lastValidation": "2026-07-04T08:42:11.720842"
 }
