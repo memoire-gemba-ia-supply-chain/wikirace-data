@@ -1,26 +1,7 @@
 {
-  "lastUpdated": "2026-07-04T08:42:06.191703",
-  "totalEvents": 31,
+  "lastUpdated": "2026-07-05T08:56:50.009532",
+  "totalEvents": 30,
   "events": [
-    {
-      "id": "grand-raid-di-cromagnon-2026-07-04",
-      "name": "Grand Raid di Cromagnon",
-      "date": "2026-07-04",
-      "city": "Limone Piemonte",
-      "country": "Italy",
-      "countryCode": "IT",
-      "discipline": "Trail",
-      "distance": "Ultra Trail",
-      "elevationGain": null,
-      "description": "Major ultra-marathon in Limone Piemonte, known for its extreme difficulty and beauty.",
-      "registrationUrl": "https://ultrasignup.com",
-      "imageUrl": "grand_raid_di_cromagnon",
-      "price": null,
-      "currency": null,
-      "registrationStatus": null,
-      "availableDistances": null,
-      "gpxUrl": null
-    },
     {
       "id": "badwater-135-2026-07-13",
       "name": "Badwater 135",
@@ -596,7 +577,7 @@
       "gpxUrl": null
     }
   ],
-  "lastAudit": "2026-07-04T08:42:06.194374",
-  "gpxUpdate": "2026-07-04 08:42:06",
-  "lastValidation": "2026-07-04T08:42:11.720842"
+  "lastAudit": "2026-07-05T08:56:50.012592",
+  "gpxUpdate": "2026-07-05 08:56:50",
+  "lastValidation": "2026-07-05T08:56:55.871092"
 }
