@@ -43,6 +43,20 @@
 
 "prep.days_to_go" = "JOURS AVANT";
 "prep.strategy" = "Stratégie";
+"prep.nutrition" = "Nutrition";
 "prep.training" = "Entraînement";
 "prep.checklist" = "Check-list";
 "prep.remove" = "Retirer de mes courses";
+
+"result.needs_result" = "Résultat attendu";
+"result.upcoming" = "Courses à venir";
+"result.history" = "Historique";
+"result.did_finish_prompt" = "Avez-vous terminé cette course ?";
+"result.finished" = "Terminé";
+"result.dnf" = "DNF / DNS";
+"result.completion" = "Résultat de la course";
+"result.did_finish" = "Avez-vous fini ?";
+"result.yes" = "Oui ! 🏁";
+"result.no" = "Non ❌";
+"result.finish_time" = "Votre temps final";
+"result.save_result" = "Enregistrer le résultat";

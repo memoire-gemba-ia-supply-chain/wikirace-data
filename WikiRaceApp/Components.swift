@@ -58,87 +58,107 @@ struct DistanceBadge: View {
 struct EventCard: View {
     let event: RaceEvent
     
+    var disciplineColor: Color {
+        switch event.discipline {
+        case .running: return .themeBlue
+        case .trail: return .themeOrange
+        case .triathlon: return .themeRed
+        }
+    }
+    
     var body: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            HStack(alignment: .top) {
-                VStack(alignment: .leading, spacing: 4) {
-                    Text(event.discipline.rawValue.uppercased())
-                        .font(.caption)
-                        .fontWeight(.bold)
-                        .foregroundColor(.themeTextSecondary)
-                    
-                    Text(event.name)
-                        .font(.title3)
-                        .fontWeight(.bold)
-                        .foregroundColor(.themeTextPrimary)
-                        .lineLimit(2)
-                }
-                
-                Spacer()
-                
-                // Date Banner
-                VStack {
-                    Text(event.date, format: .dateTime.month())
-                        .font(.caption)
-                        .fontWeight(.bold)
-                        .textCase(.uppercase)
-                        .foregroundColor(.red)
-                    Text(event.date, format: .dateTime.day())
-                        .font(.title3)
-                        .fontWeight(.black)
-                    Text(event.date, format: .dateTime.year()) // Added Year
-                        .font(.caption2)
-                        .foregroundColor(.gray)
-                }
-                .padding(8)
-                .background(Color.gray.opacity(0.1))
-                .cornerRadius(8)
-            }
+        HStack(spacing: 0) {
+            // Left Accent Bar (Discipline Color)
+            Rectangle()
+                .fill(disciplineColor)
+                .frame(width: 6)
             
-            // Info Row: Distance | Price
-            HStack(spacing: 12) {
-                DistanceBadge(distance: event.distance)
+            VStack(alignment: .leading, spacing: 12) {
+                // Header Row: Discipline + Name + Date Box
+                HStack(alignment: .top) {
+                    VStack(alignment: .leading, spacing: 6) {
+                        HStack(spacing: 6) {
+                            Image(systemName: event.discipline.iconName)
+                                .font(.system(size: 10, weight: .black))
+                            Text(event.discipline.rawValue.uppercased())
+                                .font(.system(size: 10, weight: .black))
+                        }
+                        .foregroundColor(disciplineColor)
+                        
+                        Text(event.name)
+                            .font(.headline)
+                            .fontWeight(.bold)
+                            .foregroundColor(.themeTextPrimary)
+                            .lineLimit(2)
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
+                    
+                    Spacer()
+                    
+                    // Date Box
+                    VStack(spacing: 2) {
+                        Text(event.date, format: .dateTime.day())
+                            .font(.system(size: 18, weight: .black))
+                        Text(event.date, format: .dateTime.month(.abbreviated))
+                            .font(.system(size: 10, weight: .bold))
+                            .textCase(.uppercase)
+                    }
+                    .foregroundColor(.white)
+                    .frame(width: 46, height: 46)
+                    .background(
+                        RoundedRectangle(cornerRadius: 10)
+                            .fill(disciplineColor)
+                    )
+                }
                 
-                if event.price != nil {
-                    HStack(spacing: 4) {
-                        Image(systemName: "banknote")
-                            .font(.caption)
+                // Info Row: Distance + Elevation + Price
+                HStack(spacing: 12) {
+                    DistanceBadge(distance: event.distance)
+                    
+                    if let elevation = event.elevationGain {
+                        HStack(spacing: 2) {
+                            Image(systemName: "arrow.up.right")
+                            Text("\(elevation)m")
+                        }
+                        .font(.system(size: 12, weight: .bold))
+                        .foregroundColor(.themeTextSecondary)
+                    }
+                    
+                    Spacer()
+                    
+                    if event.price != nil {
                         Text(event.formattedPrice)
+                            .font(.system(size: 12, weight: .black))
+                            .foregroundColor(.themeTextPrimary)
+                            .padding(.horizontal, 8)
+                            .padding(.vertical, 4)
+                            .background(Color.themeGreen.opacity(0.1))
+                            .cornerRadius(6)
+                    }
+                }
+                
+                // Footer Row: Location
+                HStack {
+                    HStack(spacing: 4) {
+                        Text(event.flagEmoji)
+                        Text("\(event.city), \(event.country)")
                             .font(.caption)
                             .fontWeight(.medium)
+                            .foregroundColor(.themeTextSecondary)
                     }
-                    .foregroundColor(.gray)
-                }
-                
-                Spacer()
-            }
-            
-            Divider()
-            
-            HStack {
-                HStack(spacing: 4) {
-                    Text(event.flagEmoji)
-                    Text(event.country)
-                        .font(.subheadline)
-                        .foregroundColor(.themeTextSecondary)
-                }
-                
-                Spacer()
-                
-                if let elevation = event.elevationGain {
-                    HStack(spacing: 2) {
-                        Image(systemName: "arrow.up.right")
-                        Text("\(elevation)m")
-                    }
-                    .font(.caption)
-                    .foregroundColor(.gray)
+                    
+                    Spacer()
                 }
             }
+            .padding(14)
         }
-        .padding()
         .background(Color.themeCardBackground)
         .cornerRadius(16)
-        .shadow(color: Color.black.opacity(0.05), radius: 5, x: 0, y: 2)
+        .overlay(
+            RoundedRectangle(cornerRadius: 16)
+                .stroke(Color.themeBlue.opacity(0.05), lineWidth: 1)
+        )
+        .shadow(color: Color.black.opacity(0.06), radius: 8, x: 0, y: 4)
     }
 }
 

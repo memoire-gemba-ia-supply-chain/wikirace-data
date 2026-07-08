@@ -169,9 +169,24 @@ public struct AppStrings {
     // Preparation Screen
     static let prepDaysToGo = "prep.days_to_go".localized
     static let prepStrategy = "prep.strategy".localized
+    static let prepNutrition = "prep.nutrition".localized
     static let prepTraining = "prep.training".localized
     static let prepChecklist = "prep.checklist".localized
     static let prepRemove = "prep.remove".localized
+    
+    // Results & History
+    static let resultNeedsResult = "result.needs_result".localized
+    static let resultUpcoming = "result.upcoming".localized
+    static let resultHistory = "result.history".localized
+    static let resultDidFinishPrompt = "result.did_finish_prompt".localized
+    static let resultFinished = "result.finished".localized
+    static let resultDNF = "result.dnf".localized
+    static let resultCompletion = "result.completion".localized
+    static let resultDidFinish = "result.did_finish".localized
+    static let resultYes = "result.yes".localized
+    static let resultNo = "result.no".localized
+    static let resultFinishTime = "result.finish_time".localized
+    static let resultSaveResult = "result.save_result".localized
 }
 
 // MARK: - Race Strategy Models

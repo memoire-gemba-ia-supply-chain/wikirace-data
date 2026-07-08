@@ -79,10 +79,8 @@ class RaceDataService: ObservableObject {
         // Load Events
         if let data = UserDefaults.standard.data(forKey: saveKey) {
             if let decoded = try? decoder.decode([SavedRaceEntry].self, from: data) {
-                // Filter out past saved events
-                let today = Calendar.current.startOfDay(for: Date())
-                self.savedEvents = decoded.filter { $0.event.date >= today }
-                print("📂 Loaded \(self.savedEvents.count) saved events (filtered past ones)")
+                self.savedEvents = decoded
+                print("📂 Loaded \(self.savedEvents.count) saved events")
             }
         }
         
@@ -92,6 +90,15 @@ class RaceDataService: ObservableObject {
                 self.userProfile = decoded
                 print("📂 Loaded user profile with \(decoded.healthLogs.count) logs")
             }
+        }
+    }
+    
+    func saveResult(for entryId: UUID, isFinished: Bool, actualTime: TimeInterval?) {
+        if let index = savedEvents.firstIndex(where: { $0.id == entryId }) {
+            savedEvents[index].isFinished = isFinished
+            savedEvents[index].actualTime = actualTime
+            savedEvents[index].resultSaved = true
+            save()
         }
     }
     

@@ -9,6 +9,11 @@ struct SavedRaceEntry: Identifiable, Codable {
     var strategy: RaceStrategy? // Persist the calculated strategy
     var preparation: RacePreparation? // Full race preparation data
     
+    // Result Fields
+    var isFinished: Bool? // nil = unknown, true = finished, false = DNF/Did not start
+    var actualTime: TimeInterval? // Official finish time
+    var resultSaved: Bool = false // To track if the user has already answered the "did you finish?" prompt
+    
     init(event: RaceEvent, targetPace: String? = nil, targetSpeed: Double? = nil, notes: String? = nil, strategy: RaceStrategy? = nil, preparation: RacePreparation? = nil) {
         self.id = UUID()
         self.event = event

@@ -43,6 +43,20 @@
 
 "prep.days_to_go" = "DAYS TO GO";
 "prep.strategy" = "Strategy";
+"prep.nutrition" = "Nutrition";
 "prep.training" = "Training";
 "prep.checklist" = "Checklist";
 "prep.remove" = "Remove from My Races";
+
+"result.needs_result" = "Needs Your Result";
+"result.upcoming" = "Upcoming Races";
+"result.history" = "Race History";
+"result.did_finish_prompt" = "Did you finish this race?";
+"result.finished" = "Finished";
+"result.dnf" = "DNF / DNS";
+"result.completion" = "Race Completion";
+"result.did_finish" = "Did you finish?";
+"result.yes" = "Yes! 🏁";
+"result.no" = "No ❌";
+"result.finish_time" = "Your Finish Time";
+"result.save_result" = "Save Result";

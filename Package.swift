@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "WikiRaceApp",
+    name: "WikiRaceAppStale",
     defaultLocalization: "en",
     platforms: [
         .iOS(.v17),
@@ -11,14 +11,18 @@ let package = Package(
     ],
     products: [
         .executable(
-            name: "WikiRaceApp",
-            targets: ["WikiRaceApp"]
+            name: "WikiRaceAppStale",
+            targets: ["WikiRaceAppStale"]
         )
     ],
     targets: [
         .executableTarget(
-            name: "WikiRaceApp",
-            path: "WikiRaceApp"
+            name: "WikiRaceAppStale",
+            path: "WikiRaceApp",
+            resources: [
+                .process("Media.xcassets"),
+                .process("events.json")
+            ]
         )
     ]
 )

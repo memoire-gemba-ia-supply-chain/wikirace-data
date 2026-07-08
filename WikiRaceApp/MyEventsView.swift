@@ -2,10 +2,22 @@ import SwiftUI
 
 struct MyEventsView: View {
     @ObservedObject private var dataService = RaceDataService.shared
+    @State private var recordingResultEntry: SavedRaceEntry?
     
     // Sort events by date (nearest first)
-    var sortedEvents: [SavedRaceEntry] {
-        dataService.savedEvents.sorted { $0.event.date < $1.event.date }
+    var upcomingEvents: [SavedRaceEntry] {
+        dataService.savedEvents.filter { $0.event.date >= Date() && !$0.resultSaved }
+            .sorted { $0.event.date < $1.event.date }
+    }
+    
+    var pendingResultEvents: [SavedRaceEntry] {
+        dataService.savedEvents.filter { $0.event.date < Date() && !$0.resultSaved }
+            .sorted { $0.event.date < $1.event.date }
+    }
+    
+    var completedEvents: [SavedRaceEntry] {
+        dataService.savedEvents.filter { $0.resultSaved }
+            .sorted { $0.event.date > $1.event.date }
     }
     
     var body: some View {
@@ -16,22 +28,45 @@ struct MyEventsView: View {
                 if dataService.savedEvents.isEmpty {
                     EmptyStateView()
                 } else {
-                    ScrollView {
-                        VStack(spacing: 20) {
-                            ForEach(sortedEvents) { entry in
-                                if let index = dataService.savedEvents.firstIndex(where: { $0.id == entry.id }) {
-                                    NavigationLink(destination: EventStrategyDetailView(entry: $dataService.savedEvents[index])) {
-                                        EnhancedEventCard(entry: entry)
+                    List {
+                        if !pendingResultEvents.isEmpty {
+                            Section(header: Text(AppStrings.resultNeedsResult).font(.headline).foregroundColor(.themeOrange)) {
+                                ForEach(pendingResultEvents) { entry in
+                                    PendingResultRow(entry: entry) {
+                                        recordingResultEntry = entry
                                     }
-                                    .buttonStyle(PlainButtonStyle())
                                 }
                             }
                         }
-                        .padding()
+                        
+                        if !upcomingEvents.isEmpty {
+                            Section(header: Text(AppStrings.resultUpcoming).font(.headline).foregroundColor(.themeBlue)) {
+                                ForEach(upcomingEvents) { entry in
+                                    if let index = dataService.savedEvents.firstIndex(where: { $0.id == entry.id }) {
+                                        NavigationLink(destination: EventStrategyDetailView(entry: $dataService.savedEvents[index])) {
+                                            EnhancedEventCard(entry: entry)
+                                        }
+                                        .buttonStyle(PlainButtonStyle())
+                                    }
+                                }
+                            }
+                        }
+                        
+                        if !completedEvents.isEmpty {
+                            Section(header: Text(AppStrings.resultHistory).font(.headline).foregroundColor(.themeGreen)) {
+                                ForEach(completedEvents) { entry in
+                                    CompletedRaceRow(entry: entry)
+                                }
+                            }
+                        }
                     }
+                    .listStyle(InsetGroupedListStyle())
                 }
             }
-            .navigationTitle("My Races")
+            .navigationTitle(AppStrings.tabCalendar)
+            .sheet(item: $recordingResultEntry) { entry in
+                RecordResultView(entry: entry)
+            }
         }
     }
 }
@@ -232,6 +267,7 @@ struct EventStrategyDetailView: View {
             // Segmented Control
             Picker("View", selection: $selectedTab) {
                 Text(AppStrings.prepStrategy).tag(1)
+                Text(AppStrings.prepNutrition).tag(4)
                 Text(AppStrings.prepTraining).tag(2)
                 Text(AppStrings.prepChecklist).tag(3)
             }
@@ -249,6 +285,9 @@ struct EventStrategyDetailView: View {
                     nutrition: $nutritionPlan
                 )
                 .tag(1)
+                
+                NutritionView(nutrition: nutritionPlan)
+                    .tag(4)
                 
                 TrainingPlanView(entry: $entry)
                     .tag(2)
@@ -351,6 +390,22 @@ struct StrategyView: View {
     @Binding var strategy: RaceStrategy?
     @Binding var nutrition: [NutritionItem]
     
+    var distanceKm: Double {
+        switch entry.event.distance {
+        case .fiveKm: return 5.0
+        case .tenKm: return 10.0
+        case .halfMarathon: return 21.1
+        case .marathon: return 42.2
+        case .halfIronman: return 21.1
+        case .ironman: return 42.2
+        case .ultraTrail: return 50.0
+        }
+    }
+    
+    var averagePace: TimeInterval {
+        targetTime / distanceKm
+    }
+    
     var variationText: String {
         if variation < -1.0 { return "Strong Negative Split" }
         if variation < 0.0 { return "Negative Split" }
@@ -362,125 +417,351 @@ struct StrategyView: View {
     var body: some View {
         ScrollView {
             VStack(spacing: 24) {
-                VStack(alignment: .leading, spacing: 16) {
-                    Text("Target Configuration").font(.headline)
-                    HStack {
-                        Text("Target Time:")
-                        Spacer()
+                // Performance Hero Dashboard
+                VStack(spacing: 12) {
+                    // Top Hero: Target Time
+                    VStack(spacing: 8) {
+                        Text("TARGET FINISH")
+                            .font(.system(size: 10, weight: .black))
+                            .opacity(0.7)
                         Text(formatDuration(targetTime))
-                            .font(.system(.body, design: .monospaced))
-                            .bold()
-                        Stepper("", value: $targetTime, step: 60).labelsHidden()
+                            .font(.system(size: 44, weight: .black, design: .rounded))
                     }
-                    VStack(alignment: .leading) {
-                        Text("Pace Strategy: \(variationText)")
-                            .font(.caption).foregroundColor(.secondary)
-                        Slider(value: $variation, in: -5.0...5.0, step: 0.5) {
-                            Text("Variation")
-                        } minimumValueLabel: { Text("Neg") } maximumValueLabel: { Text("Pos") }
-                    }
-                    Button(action: recalculate) {
-                        Text("Recalculate Plan")
-                            .frame(maxWidth: .infinity).padding()
-                            .background(Color.themeBlue).foregroundColor(.white).cornerRadius(10)
-                    }
-                }
-                .padding().background(Color.themeCardBackground).cornerRadius(12)
-                
-                VStack(alignment: .leading, spacing: 12) {
-                    HStack {
-                        Image(systemName: "drop.fill").foregroundColor(.blue)
-                        Text("Nutrition Plan").font(.headline)
-                    }
-                    ForEach(nutrition) { item in
-                        HStack(alignment: .top) {
-                            Text(item.formattedTime).font(.caption).bold().frame(width: 50, alignment: .leading)
-                            VStack(alignment: .leading) {
-                                Text(item.type.rawValue).font(.subheadline).bold()
-                                Text(item.description).font(.caption).foregroundColor(.gray)
-                            }
-                            Spacer()
-                        }
-                        .padding(.vertical, 4)
-                        Divider()
-                    }
-                }
-                .padding().background(Color.themeCardBackground).cornerRadius(12)
+                    .frame(maxWidth: .infinity)
+                    .padding(.vertical, 24)
+                    .background(
+                        LinearGradient(gradient: Gradient(colors: [.themeBlue, .themeBlue.opacity(0.9)]), startPoint: .topLeading, endPoint: .bottomTrailing)
+                    )
+                    .foregroundColor(.white)
+                    .cornerRadius(24)
+                    .shadow(color: Color.themeBlue.opacity(0.3), radius: 10, x: 0, y: 8)
 
-                VStack(alignment: .leading, spacing: 0) {
+                    // Bottom Row: Distance & Avg Pace
+                    HStack(spacing: 12) {
+                        MetricCard(label: "DISTANCE", value: String(format: "%.1f", distanceKm), unit: "km", icon: "figure.run")
+                        MetricCard(label: "AVG PACE", value: formatPace(averagePace), unit: "/km", icon: "timer")
+                    }
+                }
+                
+                // Configuration Card
+                VStack(alignment: .leading, spacing: 20) {
+                    Text("Strategy Configuration")
+                        .font(.headline)
+                        .foregroundColor(.themeTextPrimary)
+                    
+                    VStack(spacing: 24) {
+                        // Time Selection
+                        VStack(alignment: .leading, spacing: 12) {
+                            HStack {
+                                Label("Final Time", systemImage: "timer")
+                                    .font(.subheadline)
+                                    .fontWeight(.bold)
+                                Spacer()
+                                Text(formatDuration(targetTime))
+                                    .font(.system(.title3, design: .monospaced))
+                                    .fontWeight(.black)
+                                    .foregroundColor(.themeBlue)
+                            }
+                            Stepper("", value: $targetTime, in: 600...86400, step: 60)
+                                .labelsHidden()
+                                .frame(maxWidth: .infinity, alignment: .trailing)
+                        }
+                        
+                        Divider()
+                        
+                        // Pace Strategy
+                        VStack(alignment: .leading, spacing: 12) {
+                            HStack {
+                                Label("Pace Strategy", systemImage: "chart.bar.xaxis")
+                                    .font(.subheadline)
+                                    .fontWeight(.bold)
+                                Spacer()
+                                Text(variationText)
+                                    .font(.caption)
+                                    .fontWeight(.black)
+                                    .padding(.horizontal, 8)
+                                    .padding(.vertical, 4)
+                                    .background(variation < 0 ? Color.themeGreen.opacity(0.1) : Color.themeRed.opacity(0.1))
+                                    .foregroundColor(variation < 0 ? .themeGreen : .themeRed)
+                                    .cornerRadius(6)
+                            }
+                            
+                            Slider(value: $variation, in: -5.0...5.0, step: 0.5)
+                                .accentColor(.themeBlue)
+                            
+                            HStack {
+                                Text("Negative Split").font(.caption2).foregroundColor(.secondary)
+                                Spacer()
+                                Text("Positive Split").font(.caption2).foregroundColor(.secondary)
+                            }
+                            
+                            // Visual Pace Chart (Mini)
+                            if let splits = strategy?.splits {
+                                PaceVariationMiniChart(splits: splits, avg: averagePace)
+                                    .frame(height: 40)
+                                    .padding(.top, 8)
+                            }
+                        }
+                    }
+                    
+                    Button(action: recalculate) {
+                        HStack {
+                            Image(systemName: "arrow.clockwise")
+                            Text("Update Strategy")
+                        }
+                        .fontWeight(.bold)
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .background(Color.themeBlue)
+                        .foregroundColor(.white)
+                        .cornerRadius(12)
+                    }
+                    .padding(.top, 8)
+                }
+                .padding()
+                .background(Color.themeCardBackground)
+                .cornerRadius(20)
+                
+                // Splits Section
+                VStack(alignment: .leading, spacing: 16) {
                     HStack {
                         Image(systemName: "stopwatch.fill").foregroundColor(.orange)
                         Text("Kilometer Splits").font(.headline)
-                    }.padding()
-                    HStack {
-                        Text("Km").frame(width: 40)
                         Spacer()
-                        Text("Pace").frame(width: 80)
-                        Spacer()
-                        Text("Elapsed").frame(width: 80)
                     }
-                    .font(.caption).foregroundColor(.gray).padding(.horizontal).padding(.bottom, 8)
-                    if let splits = strategy?.splits {
-                        LazyVStack(spacing: 0) {
-                            ForEach(splits) { split in
-                                HStack {
-                                    Text("\(split.kilometer)").frame(width: 40).font(.system(.body, design: .monospaced))
-                                    Spacer()
-                                    Text(split.formattedPace).frame(width: 80).font(.system(.body, design: .monospaced))
-                                        .foregroundColor(paceColor(for: split, avg: averagePace(splits)))
-                                    Spacer()
-                                    Text(split.formattedCumulative).frame(width: 80).font(.system(.caption, design: .monospaced)).foregroundColor(.gray)
+                    .padding(.horizontal)
+                    
+                    VStack(spacing: 0) {
+                        // Header
+                        HStack {
+                            Text("KM").frame(width: 40, alignment: .leading)
+                            Spacer()
+                            Text("PACE").frame(width: 80, alignment: .center)
+                            Spacer()
+                            Text("ELAPSED").frame(width: 90, alignment: .trailing)
+                        }
+                        .font(.system(size: 10, weight: .black))
+                        .foregroundColor(.secondary)
+                        .padding(.horizontal)
+                        .padding(.bottom, 12)
+                        
+                        if let splits = strategy?.splits {
+                            VStack(spacing: 0) {
+                                ForEach(splits) { split in
+                                    let isMilestone = split.kilometer % 5 == 0 || split.kilometer == 1 || split.kilometer == Int(ceil(distanceKm))
+                                    
+                                    HStack {
+                                        Text("\(split.kilometer)")
+                                            .font(.system(.subheadline, design: .monospaced))
+                                            .fontWeight(isMilestone ? .black : .medium)
+                                            .frame(width: 40, alignment: .leading)
+                                        
+                                        Spacer()
+                                        
+                                        HStack(spacing: 4) {
+                                            Circle()
+                                                .fill(paceColor(for: split, avg: averagePace))
+                                                .frame(width: 6, height: 6)
+                                            Text(split.formattedPace)
+                                                .font(.system(.subheadline, design: .monospaced))
+                                                .fontWeight(.bold)
+                                        }
+                                        .frame(width: 80, alignment: .center)
+                                        
+                                        Spacer()
+                                        
+                                        Text(split.formattedCumulative)
+                                            .font(.system(.caption, design: .monospaced))
+                                            .foregroundColor(.secondary)
+                                            .frame(width: 90, alignment: .trailing)
+                                    }
+                                    .padding(.vertical, 12)
+                                    .padding(.horizontal)
+                                    .background(isMilestone ? Color.themeBlue.opacity(0.05) : Color.clear)
+                                    
+                                    if split.id != splits.last?.id {
+                                        Divider().padding(.leading, 12)
+                                    }
                                 }
-                                .padding(.vertical, 8).padding(.horizontal)
-                                .background(split.kilometer % 2 == 0 ? Color.gray.opacity(0.05) : Color.clear)
                             }
                         }
                     }
+                    .background(Color.themeCardBackground)
+                    .cornerRadius(20)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 20)
+                            .stroke(Color.gray.opacity(0.1), lineWidth: 1)
+                    )
                 }
-                .background(Color.themeCardBackground).cornerRadius(12)
             }
             .padding()
         }
     }
     
     func recalculate() {
-        let distanceKm = getDistanceKm(entry.event.distance)
+        let currentDist = distanceKm
         strategy = RaceStrategy(
             targetTime: targetTime,
             variation: variation,
-            splits: RaceStrategyCalculator.calculateSplits(distanceKm: distanceKm, targetTime: targetTime, variation: variation),
+            splits: RaceStrategyCalculator.calculateSplits(distanceKm: currentDist, targetTime: targetTime, variation: variation),
             nutritionPlan: []
         )
         nutrition = RaceStrategyCalculator.generateNutritionPlan(duration: targetTime)
     }
     
-    func getDistanceKm(_ dist: Distance) -> Double {
-        switch dist {
-        case .fiveKm: return 5.0
-        case .tenKm: return 10.0
-        case .halfMarathon: return 21.1
-        case .marathon: return 42.2
-        case .halfIronman: return 21.1
-        case .ironman: return 42.2
-        case .ultraTrail: return 50.0
-        }
-    }
-    
     func formatDuration(_ duration: TimeInterval) -> String {
         let hours = Int(duration) / 3600
         let minutes = (Int(duration) % 3600) / 60
-        return String(format: "%02d h %02d m", hours, minutes)
+        let seconds = Int(duration) % 60
+        if hours > 0 {
+            return String(format: "%02d:%02d:%02d", hours, minutes, seconds)
+        } else {
+            return String(format: "%02d:%02d", minutes, seconds)
+        }
     }
     
-    func averagePace(_ splits: [RaceSplit]) -> TimeInterval {
-        let total = splits.reduce(0) { $0 + $1.time }
-        return total / Double(splits.count)
+    func formatPace(_ pace: TimeInterval) -> String {
+        let minutes = Int(pace) / 60
+        let seconds = Int(pace) % 60
+        return String(format: "%d:%02d", minutes, seconds)
     }
     
     func paceColor(for split: RaceSplit, avg: TimeInterval) -> Color {
-        if split.time < avg - 2 { return .green }
-        if split.time > avg + 2 { return .red }
-        return .primary
+        let diff = split.time - avg
+        if diff < -2 { return .themeGreen }
+        if diff > 2 { return .themeRed }
+        return .orange
+    }
+}
+
+struct MetricCard: View {
+    let label: String
+    let value: String
+    let unit: String
+    let icon: String
+    
+    var body: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            HStack {
+                Image(systemName: icon)
+                    .font(.caption)
+                    .foregroundColor(.themeBlue)
+                Text(label)
+                    .font(.system(size: 9, weight: .black))
+                    .foregroundColor(.secondary)
+            }
+            
+            HStack(alignment: .bottom, spacing: 2) {
+                Text(value)
+                    .font(.system(.title2, design: .rounded))
+                    .fontWeight(.black)
+                    .foregroundColor(.themeTextPrimary)
+                Text(unit)
+                    .font(.caption2)
+                    .fontWeight(.bold)
+                    .foregroundColor(.secondary)
+                    .padding(.bottom, 4)
+            }
+        }
+        .padding()
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(Color.themeCardBackground)
+        .cornerRadius(20)
+        .overlay(
+            RoundedRectangle(cornerRadius: 20)
+                .stroke(Color.gray.opacity(0.1), lineWidth: 1)
+        )
+    }
+}
+
+struct PaceVariationMiniChart: View {
+    let splits: [RaceSplit]
+    let avg: TimeInterval
+    
+    var body: some View {
+        HStack(alignment: .bottom, spacing: 2) {
+            ForEach(splits) { split in
+                let diff = avg - split.time // positive means faster than avg
+                let normalizedHeight = 20 + (diff * 2) // scale for visual
+                
+                RoundedRectangle(cornerRadius: 1)
+                    .fill(diff > 0 ? Color.themeGreen : Color.themeRed)
+                    .frame(height: max(5, min(40, CGFloat(normalizedHeight))))
+            }
+        }
+    }
+}
+
+// MARK: - Nutrition View
+struct NutritionView: View {
+    let nutrition: [NutritionItem]
+    
+    var body: some View {
+        ScrollView {
+            VStack(alignment: .leading, spacing: 20) {
+                VStack(alignment: .leading, spacing: 16) {
+                    HStack {
+                        Image(systemName: "drop.fill").foregroundColor(.blue)
+                        Text("Nutrition & Hydration Strategy")
+                            .font(.title3)
+                            .fontWeight(.bold)
+                    }
+                    
+                    Text("Fueling is as important as training. Follow this schedule to maintain energy levels throughout your race.")
+                        .font(.subheadline)
+                        .foregroundColor(.secondary)
+                }
+                .padding()
+                .background(Color.themeCardBackground)
+                .cornerRadius(16)
+                
+                VStack(alignment: .leading, spacing: 0) {
+                    ForEach(nutrition) { item in
+                        VStack(spacing: 0) {
+                            HStack(alignment: .top, spacing: 16) {
+                                Text(item.formattedTime)
+                                    .font(.system(.headline, design: .monospaced))
+                                    .foregroundColor(.themeBlue)
+                                    .frame(width: 60, alignment: .leading)
+                                
+                                VStack(alignment: .leading, spacing: 4) {
+                                    HStack {
+                                        Text(item.type.rawValue)
+                                            .font(.headline)
+                                        Spacer()
+                                        Image(systemName: nutritionIcon(for: item.type))
+                                            .foregroundColor(.secondary)
+                                    }
+                                    
+                                    Text(item.description)
+                                        .font(.subheadline)
+                                        .foregroundColor(.secondary)
+                                }
+                            }
+                            .padding()
+                            
+                            if item.id != nutrition.last?.id {
+                                Divider().padding(.leading, 76)
+                            }
+                        }
+                    }
+                }
+                .background(Color.themeCardBackground)
+                .cornerRadius(16)
+                .shadow(color: Color.black.opacity(0.05), radius: 10, x: 0, y: 5)
+            }
+            .padding()
+        }
+    }
+    
+    func nutritionIcon(for type: NutritionItem.NutritionType) -> String {
+        switch type {
+        case .water: return "drop.fill"
+        case .gel: return "bolt.fill"
+        case .salt: return "pill.fill"
+        case .food: return "leaf.fill"
+        case .caffeine: return "cup.and.saucer.fill"
+        }
     }
 }
 
@@ -632,75 +913,353 @@ struct WorkoutRow: View {
 struct ChecklistView: View {
     @Binding var entry: SavedRaceEntry
     
+    var progress: Double {
+        let total = entry.preparation?.checklist.totalCount ?? 0
+        let completed = entry.preparation?.checklist.completedCount ?? 0
+        return total > 0 ? Double(completed) / Double(total) : 0
+    }
+    
+    var statusMessage: String {
+        if progress == 1.0 { return "You're all set! 🚀" }
+        if progress > 0.7 { return "Almost ready!" }
+        if progress > 0.3 { return "Making progress..." }
+        return "Gear up!"
+    }
+
     var body: some View {
         ScrollView {
-            VStack(alignment: .leading, spacing: 20) {
-                // Progress
-                HStack {
-                    Text("Ready for Race Day")
-                        .font(.headline)
-                    Spacer()
-                    Text("\(entry.preparation?.checklist.completedCount ?? 0)/\(entry.preparation?.checklist.totalCount ?? 0)")
-                        .foregroundColor(.themeGreen)
+            VStack(alignment: .leading, spacing: 24) {
+                // Status Card Header
+                VStack(spacing: 16) {
+                    HStack {
+                        VStack(alignment: .leading, spacing: 4) {
+                            Text(statusMessage)
+                                .font(.title3)
+                                .fontWeight(.black)
+                            Text("\(Int(progress * 100))% complete")
+                                .font(.subheadline)
+                                .foregroundColor(.secondary)
+                        }
+                        Spacer()
+                        Image(systemName: progress == 1.0 ? "checkmark.seal.fill" : "list.bullet.clipboard")
+                            .font(.system(size: 40))
+                            .foregroundColor(progress == 1.0 ? .themeGreen : .themeBlue)
+                    }
+                    
+                    ProgressView(value: progress)
+                        .accentColor(progress == 1.0 ? .themeGreen : .themeBlue)
+                        .scaleEffect(x: 1, y: 2, anchor: .center)
                 }
                 .padding()
                 .background(Color.themeCardBackground)
-                .cornerRadius(12)
+                .cornerRadius(16)
+                .shadow(color: Color.black.opacity(0.05), radius: 10, x: 0, y: 5)
                 
                 if let preparation = entry.preparation {
                     ForEach(ChecklistCategory.allCases, id: \.self) { category in
                         VStack(alignment: .leading, spacing: 12) {
-                            Label(category.rawValue, systemImage: category.icon)
-                                .font(.headline)
-                                .foregroundColor(.themeBlue)
+                            HStack {
+                                Image(systemName: category.icon)
+                                    .font(.headline)
+                                Text(category.rawValue)
+                                    .font(.headline)
+                                    .fontWeight(.bold)
+                                Spacer()
+                            }
+                            .foregroundColor(categoryColor(category))
+                            .padding(.bottom, 4)
                             
-                            ForEach(preparation.checklist.items.indices, id: \.self) { index in
-                                if preparation.checklist.items[index].category == category {
-                                    ChecklistItemRow(item: Binding(
-                                        get: { entry.preparation?.checklist.items[index] ?? preparation.checklist.items[index] },
-                                        set: { entry.preparation?.checklist.items[index] = $0 }
-                                    ))
+                            VStack(spacing: 1) {
+                                ForEach(preparation.checklist.items.indices, id: \.self) { index in
+                                    if preparation.checklist.items[index].category == category {
+                                        ChecklistItemRow(item: Binding(
+                                            get: { entry.preparation?.checklist.items[index] ?? preparation.checklist.items[index] },
+                                            set: { entry.preparation?.checklist.items[index] = $0 }
+                                        ), accentColor: categoryColor(category))
+                                        
+                                        if index != preparation.checklist.items.count - 1 {
+                                            Divider().padding(.leading, 44)
+                                        }
+                                    }
                                 }
                             }
                         }
                         .padding()
                         .background(Color.themeCardBackground)
-                        .cornerRadius(12)
+                        .cornerRadius(16)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 16)
+                                .stroke(categoryColor(category).opacity(0.1), lineWidth: 1)
+                        )
                     }
                 }
             }
             .padding()
         }
     }
+    
+    func categoryColor(_ category: ChecklistCategory) -> Color {
+        switch category {
+        case .gear: return .themeBlue
+        case .nutrition: return .themeGreen
+        case .travel: return .themeOrange
+        case .pacing: return .themeRed
+        }
+    }
 }
 
 struct ChecklistItemRow: View {
     @Binding var item: ChecklistItem
+    var accentColor: Color
     
     var body: some View {
         Toggle(isOn: $item.isChecked) {
             Text(item.title)
                 .font(.body)
+                .fontWeight(item.isChecked ? .medium : .bold)
+                .foregroundColor(item.isChecked ? .secondary : .themeTextPrimary)
                 .strikethrough(item.isChecked)
-                .foregroundColor(item.isChecked ? .secondary : .primary)
         }
-        .toggleStyle(CheckboxToggleStyle())
+        .toggleStyle(CheckboxToggleStyle(accentColor: accentColor))
+        .padding(.vertical, 12)
+        .contentShape(Rectangle())
+        .onTapGesture {
+            withAnimation(.spring(response: 0.3, dampingFraction: 0.6)) {
+                item.isChecked.toggle()
+            }
+        }
     }
 }
 
 struct CheckboxToggleStyle: ToggleStyle {
+    var accentColor: Color
+    
     func makeBody(configuration: Configuration) -> some View {
-        Button(action: {
-            configuration.isOn.toggle()
-        }) {
-            HStack {
-                Image(systemName: configuration.isOn ? "checkmark.circle.fill" : "circle")
-                    .foregroundColor(configuration.isOn ? .themeGreen : .gray)
-                    .font(.title3)
-                configuration.label
-                Spacer()
+        HStack {
+            ZStack {
+                Circle()
+                    .stroke(configuration.isOn ? accentColor : Color.gray.opacity(0.3), lineWidth: 2)
+                    .frame(width: 24, height: 24)
+                
+                if configuration.isOn {
+                    Image(systemName: "checkmark.circle.fill")
+                        .foregroundColor(accentColor)
+                        .font(.system(size: 24))
+                        .transition(.scale.combined(with: .opacity))
+                }
             }
+            .padding(.trailing, 8)
+            
+            configuration.label
+            Spacer()
         }
-        .buttonStyle(PlainButtonStyle())
+    }
+}
+
+// MARK: - Result Related Views
+
+struct PendingResultRow: View {
+    let entry: SavedRaceEntry
+    let action: () -> Void
+    
+    var body: some View {
+        Button(action: action) {
+            HStack(spacing: 16) {
+                ZStack {
+                    Circle()
+                        .fill(Color.themeOrange.opacity(0.1))
+                        .frame(width: 44, height: 44)
+                    Image(systemName: "timer")
+                        .foregroundColor(.themeOrange)
+                }
+                
+                VStack(alignment: .leading, spacing: 4) {
+                    Text(entry.event.name)
+                        .font(.headline)
+                        .foregroundColor(.themeTextPrimary)
+                    Text("Did you finish this race?")
+                        .font(.subheadline)
+                        .foregroundColor(.themeOrange)
+                }
+                
+                Spacer()
+                
+                Image(systemName: "pencil.circle.fill")
+                    .font(.title)
+                    .foregroundColor(.themeOrange)
+            }
+            .padding(.vertical, 8)
+        }
+    }
+}
+
+struct CompletedRaceRow: View {
+    let entry: SavedRaceEntry
+    
+    var body: some View {
+        HStack(spacing: 16) {
+            // Achievement Icon
+            ZStack {
+                Circle()
+                    .fill(entry.isFinished == true ? Color.themeGreen.opacity(0.1) : Color.themeRed.opacity(0.1))
+                    .frame(width: 44, height: 44)
+                
+                Image(systemName: entry.isFinished == true ? "medal.fill" : "xmark.seal.fill")
+                    .foregroundColor(entry.isFinished == true ? .themeGreen : .themeRed)
+                    .font(.title2)
+            }
+            
+            VStack(alignment: .leading, spacing: 4) {
+                Text(entry.event.name)
+                    .font(.headline)
+                    .foregroundColor(.themeTextPrimary)
+                
+                HStack {
+                    if entry.isFinished == true {
+                        Text("Finished")
+                            .font(.caption2)
+                            .fontWeight(.bold)
+                            .padding(.horizontal, 6)
+                            .padding(.vertical, 2)
+                            .background(Color.themeGreen.opacity(0.2))
+                            .foregroundColor(.themeGreen)
+                            .cornerRadius(4)
+                        
+                        if let time = entry.actualTime {
+                            Text(formatDuration(time))
+                                .font(.caption2)
+                                .fontWeight(.bold)
+                                .foregroundColor(.secondary)
+                        }
+                    } else {
+                        Text("DNF / DNS")
+                            .font(.caption2)
+                            .fontWeight(.bold)
+                            .padding(.horizontal, 6)
+                            .padding(.vertical, 2)
+                            .background(Color.themeRed.opacity(0.2))
+                            .foregroundColor(.themeRed)
+                            .cornerRadius(4)
+                    }
+                }
+            }
+            
+            Spacer()
+            
+            Text(entry.event.formattedDate)
+                .font(.caption)
+                .foregroundColor(.secondary)
+        }
+        .padding(.vertical, 8)
+    }
+    
+    private func formatDuration(_ time: TimeInterval) -> String {
+        let hours = Int(time) / 3600
+        let minutes = (Int(time) % 3600) / 60
+        let seconds = Int(time) % 60
+        if hours > 0 {
+            return String(format: "%d:%02d:%02d", hours, minutes, seconds)
+        } else {
+            return String(format: "%02d:%02d", minutes, seconds)
+        }
+    }
+}
+
+struct RecordResultView: View {
+    let entry: SavedRaceEntry
+    @Environment(\.presentationMode) var presentationMode
+    @ObservedObject private var dataService = RaceDataService.shared
+    
+    @State private var isFinished: Bool = true
+    @State private var hours: Int = 0
+    @State private var minutes: Int = 0
+    @State private var seconds: Int = 0
+    
+    var body: some View {
+        NavigationView {
+            Form {
+                Section(header: Text("RACE COMPLETION")) {
+                    Picker("Did you finish?", selection: $isFinished) {
+                        Text("Yes! 🏁").tag(true)
+                        Text("No ❌").tag(false)
+                    }
+                    .pickerStyle(SegmentedPickerStyle())
+                    .padding(.vertical, 8)
+                }
+                
+                if isFinished {
+                    Section(header: Text("YOUR FINISH TIME")) {
+                        HStack {
+                            VStack {
+                                Text("HR")
+                                    .font(.caption2)
+                                Picker("Hours", selection: $hours) {
+                                    ForEach(0..<24) { i in
+                                        Text("\(i)").tag(i)
+                                    }
+                                }
+                                .pickerStyle(WheelPickerStyle())
+                                .frame(width: 60, height: 100)
+                                .clipped()
+                            }
+                            
+                            Spacer()
+                            
+                            VStack {
+                                Text("MIN")
+                                    .font(.caption2)
+                                Picker("Minutes", selection: $minutes) {
+                                    ForEach(0..<60) { i in
+                                        Text("\(i)").tag(i)
+                                    }
+                                }
+                                .pickerStyle(WheelPickerStyle())
+                                .frame(width: 60, height: 100)
+                                .clipped()
+                            }
+                            
+                            Spacer()
+                            
+                            VStack {
+                                Text("SEC")
+                                    .font(.caption2)
+                                Picker("Seconds", selection: $seconds) {
+                                    ForEach(0..<60) { i in
+                                        Text("\(i)").tag(i)
+                                    }
+                                }
+                                .pickerStyle(WheelPickerStyle())
+                                .frame(width: 60, height: 100)
+                                .clipped()
+                            }
+                        }
+                    }
+                }
+                
+                Section {
+                    Button(action: {
+                        let totalSeconds = TimeInterval(hours * 3600 + minutes * 60 + seconds)
+                        dataService.saveResult(for: entry.id, isFinished: isFinished, actualTime: isFinished ? totalSeconds : nil)
+                        presentationMode.wrappedValue.dismiss()
+                    }) {
+                        Text("Save Result")
+                            .frame(maxWidth: .infinity)
+                            .fontWeight(.bold)
+                            .foregroundColor(.white)
+                            .padding()
+                            .background(Color.themeBlue)
+                            .cornerRadius(12)
+                    }
+                }
+                .listRowBackground(Color.clear)
+                .listRowInsets(EdgeInsets())
+            }
+            .navigationTitle("Race Result")
+            .navigationBarItems(
+                leading: Button("Cancel") {
+                    presentationMode.wrappedValue.dismiss()
+                }
+            )
+        }
     }
 }
