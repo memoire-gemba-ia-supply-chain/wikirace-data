@@ -6,8 +6,7 @@ Runs daily via GitHub Actions
 """
 
 import json
-import requests
-from bs4 import BeautifulSoup
+import json
 from datetime import datetime, timedelta
 import re
 
@@ -54,6 +53,14 @@ def fetch_marathon_guide():
             ("Agadir Semi-Marathon", "2026-02-22", "Agadir", "Morocco", "MA", 30, "EUR"),
             ("Fes Marathon", "2026-05-17", "Fes", "Morocco", "MA", 35, "EUR"),
             ("Cape Town Marathon", "2026-10-18", "Cape Town", "South Africa", "ZA", 60, "USD"),
+            # New Additions
+            ("Marrakech Marathon", "2026-01-25", "Marrakech", "Morocco", "MA", 70, "EUR"),
+            ("Rabat Marathon", "2026-05-10", "Rabat", "Morocco", "MA", 50, "EUR"),
+            ("Casablanca Marathon", "2026-10-25", "Casablanca", "Morocco", "MA", 40, "EUR"),
+            ("Malaga Marathon", "2026-11-08", "Malaga", "Spain", "ES", 65, "EUR"),
+            ("Madrid Marathon", "2026-04-26", "Madrid", "Spain", "ES", 85, "EUR"),
+            ("Antalya Marathon", "2026-04-05", "Antalya", "Turkey", "TR", 60, "EUR"),
+            ("Great Wall Marathon", "2026-05-16", "Beijing", "China", "CN", 1300, "USD"),
         ]
         
         for name, date, city, country, code, price, curr in marathons:
@@ -110,6 +117,13 @@ def fetch_trail_events():
         ("Zagora Sahara Trail", "2026-11-07", "Zagora", "Morocco", "MA", 150, "EUR", 600, "Ultra Trail"),
         ("Ifrane Trail", "2026-06-13", "Ifrane", "Morocco", "MA", 60, "EUR", 1200, "Ultra Trail"),
         ("Chefchaouen Trail", "2026-05-09", "Chefchaouen", "Morocco", "MA", 80, "EUR", 2000, "Ultra Trail"),
+        # New Turkey Trails
+        ("Cappadocia Ultra-Trail", "2026-10-17", "Urgup", "Turkey", "TR", 150, "EUR", 3730, "Ultra Trail"),
+        ("Iznik Ultra", "2026-04-10", "Iznik", "Turkey", "TR", 80, "EUR", 2500, "Ultra Trail"),
+        ("Lycian Way Ultra", "2026-09-26", "Kas", "Turkey", "TR", 120, "EUR", 3000, "Ultra Trail"),
+        # New Morocco Trails
+        ("Eco Trail Morocco", "2026-04-14", "Ouarzazate", "Morocco", "MA", 180, "EUR", 1500, "Ultra Trail"),
+        ("Nomad Trail Zagora", "2026-11-08", "Zagora", "Morocco", "MA", 100, "EUR", 800, "Ultra Trail"),
     ]
     
     for name, date, city, country, code, price, curr, elev, dist in trails:
@@ -182,6 +196,9 @@ def fetch_half_marathons():
         ("NYC Half", "2026-03-15", "New York", "USA", "US", 125, "USD"),
         ("Barcelona Half", "2026-02-15", "Barcelona", "Spain", "ES", 45, "EUR"),
         ("Rome Half", "2026-09-20", "Rome", "Italy", "IT", 40, "EUR"),
+        # New Additions
+        ("Malaga Half Marathon", "2026-03-15", "Malaga", "Spain", "ES", 35, "EUR"),
+        ("Bodrum Half Marathon", "2026-10-04", "Bodrum", "Turkey", "TR", 40, "EUR"),
     ]
     
     for name, date, city, country, code, price, curr in halfs:
