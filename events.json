@@ -1,26 +1,7 @@
 {
-  "lastUpdated": "2026-07-13T09:33:59.598345",
-  "totalEvents": 30,
+  "lastUpdated": "2026-07-14T08:12:53.448124",
+  "totalEvents": 29,
   "events": [
-    {
-      "id": "badwater-135-2026-07-13",
-      "name": "Badwater 135",
-      "date": "2026-07-13",
-      "city": "Death Valley",
-      "country": "USA",
-      "countryCode": "US",
-      "discipline": "Trail",
-      "distance": "Ultra Trail",
-      "elevationGain": null,
-      "description": "Major ultra-marathon in Death Valley, known for its extreme difficulty and beauty.",
-      "registrationUrl": "https://ultrasignup.com",
-      "imageUrl": "badwater_135",
-      "price": null,
-      "currency": null,
-      "registrationStatus": null,
-      "availableDistances": null,
-      "gpxUrl": null
-    },
     {
       "id": "eiger-ultra-trail-2026-07-17",
       "name": "Eiger Ultra Trail",
@@ -577,7 +558,7 @@
       "gpxUrl": null
     }
   ],
-  "lastAudit": "2026-07-13T09:33:59.601805",
-  "gpxUpdate": "2026-07-13 09:33:59",
-  "lastValidation": "2026-07-13T09:34:04.744037"
+  "lastAudit": "2026-07-14T08:12:53.450685",
+  "gpxUpdate": "2026-07-14 08:12:53",
+  "lastValidation": "2026-07-14T08:12:59.148395"
 }
