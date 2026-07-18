@@ -1,45 +1,7 @@
 {
-  "lastUpdated": "2026-07-17T08:15:10.789426",
-  "totalEvents": 29,
+  "lastUpdated": "2026-07-18T07:57:38.592097",
+  "totalEvents": 27,
   "events": [
-    {
-      "id": "eiger-ultra-trail-2026-07-17",
-      "name": "Eiger Ultra Trail",
-      "date": "2026-07-17",
-      "city": "Grindelwald",
-      "country": "Switzerland",
-      "countryCode": "CH",
-      "discipline": "Trail",
-      "distance": "Ultra Trail",
-      "elevationGain": 6700,
-      "description": "Major trail event in Grindelwald, part of international circuits.",
-      "registrationUrl": "https://itra.run",
-      "imageUrl": "eiger_ultra_trail",
-      "price": null,
-      "currency": null,
-      "registrationStatus": null,
-      "availableDistances": null,
-      "gpxUrl": null
-    },
-    {
-      "id": "hardrock-100-2026-07-17",
-      "name": "Hardrock 100",
-      "date": "2026-07-17",
-      "city": "Silverton",
-      "country": "USA",
-      "countryCode": "US",
-      "discipline": "Trail",
-      "distance": "Ultra Trail",
-      "elevationGain": 10000,
-      "description": "Major trail event in Silverton, part of international circuits.",
-      "registrationUrl": "https://itra.run",
-      "imageUrl": "hardrock_100",
-      "price": null,
-      "currency": null,
-      "registrationStatus": null,
-      "availableDistances": null,
-      "gpxUrl": null
-    },
     {
       "id": "vermont-100-2026-07-18",
       "name": "Vermont 100",
@@ -558,7 +520,7 @@
       "gpxUrl": null
     }
   ],
-  "lastAudit": "2026-07-17T08:15:10.792693",
-  "gpxUpdate": "2026-07-17 08:15:10",
-  "lastValidation": "2026-07-17T08:15:15.845141"
+  "lastAudit": "2026-07-18T07:57:38.594241",
+  "gpxUpdate": "2026-07-18 07:57:38",
+  "lastValidation": "2026-07-18T07:57:44.039459"
 }
