@@ -1,26 +1,7 @@
 {
-  "lastUpdated": "2026-07-18T07:57:38.592097",
-  "totalEvents": 27,
+  "lastUpdated": "2026-07-19T08:24:02.769347",
+  "totalEvents": 26,
   "events": [
-    {
-      "id": "vermont-100-2026-07-18",
-      "name": "Vermont 100",
-      "date": "2026-07-18",
-      "city": "West Windsor",
-      "country": "USA",
-      "countryCode": "US",
-      "discipline": "Trail",
-      "distance": "Ultra Trail",
-      "elevationGain": null,
-      "description": "Major ultra-marathon in West Windsor, known for its extreme difficulty and beauty.",
-      "registrationUrl": "https://ultrasignup.com",
-      "imageUrl": "vermont_100",
-      "price": null,
-      "currency": null,
-      "registrationStatus": null,
-      "availableDistances": null,
-      "gpxUrl": null
-    },
     {
       "id": "sierre-zinal-2026-08-08",
       "name": "Sierre-Zinal",
@@ -520,7 +501,7 @@
       "gpxUrl": null
     }
   ],
-  "lastAudit": "2026-07-18T07:57:38.594241",
-  "gpxUpdate": "2026-07-18 07:57:38",
-  "lastValidation": "2026-07-18T07:57:44.039459"
+  "lastAudit": "2026-07-19T08:24:02.772612",
+  "gpxUpdate": "2026-07-19 08:24:02",
+  "lastValidation": "2026-07-19T08:24:08.116800"
 }
