@@ -1,26 +1,7 @@
 {
-  "lastUpdated": "2026-08-08T06:58:39.390362",
-  "totalEvents": 26,
+  "lastUpdated": "2026-08-09T07:00:46.888629",
+  "totalEvents": 25,
   "events": [
-    {
-      "id": "sierre-zinal-2026-08-08",
-      "name": "Sierre-Zinal",
-      "date": "2026-08-08",
-      "city": "Zinal",
-      "country": "Switzerland",
-      "countryCode": "CH",
-      "discipline": "Trail",
-      "distance": "Ultra Trail",
-      "elevationGain": 2100,
-      "description": "Major trail event in Zinal, part of international circuits.",
-      "registrationUrl": "https://itra.run",
-      "imageUrl": "sierre-zinal",
-      "price": null,
-      "currency": null,
-      "registrationStatus": null,
-      "availableDistances": null,
-      "gpxUrl": "https://www.sierre-zinal.com/en/course-map-gpx-21.html"
-    },
     {
       "id": "leadville-trail-100-2026-08-22",
       "name": "Leadville Trail 100",
@@ -501,7 +482,7 @@
       "gpxUrl": null
     }
   ],
-  "lastAudit": "2026-08-08T06:58:39.393284",
-  "gpxUpdate": "2026-08-08 06:58:39",
-  "lastValidation": "2026-08-08T06:58:44.380779"
+  "lastAudit": "2026-08-09T07:00:46.891541",
+  "gpxUpdate": "2026-08-09 07:00:46",
+  "lastValidation": "2026-08-09T07:00:52.057899"
 }
