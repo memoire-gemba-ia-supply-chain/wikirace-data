@@ -1,45 +1,7 @@
 {
-  "lastUpdated": "2026-08-28T18:21:34.454024",
-  "totalEvents": 22,
+  "lastUpdated": "2026-08-29T12:29:40.612574",
+  "totalEvents": 20,
   "events": [
-    {
-      "id": "utmb-mont-blanc-2026-08-28",
-      "name": "UTMB Mont-Blanc",
-      "date": "2026-08-28",
-      "city": "Chamonix",
-      "country": "France",
-      "countryCode": "FR",
-      "discipline": "Trail",
-      "distance": "Ultra Trail",
-      "elevationGain": 10000,
-      "description": "Major trail event in Chamonix, part of international circuits.",
-      "registrationUrl": "https://itra.run",
-      "imageUrl": "utmb_mont-blanc",
-      "price": null,
-      "currency": null,
-      "registrationStatus": null,
-      "availableDistances": null,
-      "gpxUrl": "https://montblanc.utmb.world/races/utmb"
-    },
-    {
-      "id": "ccc-utmb-2026-08-28",
-      "name": "CCC (UTMB)",
-      "date": "2026-08-28",
-      "city": "Courmayeur/Chamonix",
-      "country": "Italy/France",
-      "countryCode": "FR",
-      "discipline": "Trail",
-      "distance": "Ultra Trail",
-      "elevationGain": 6100,
-      "description": "Major trail event in Courmayeur/Chamonix, part of international circuits.",
-      "registrationUrl": "https://itra.run",
-      "imageUrl": "ccc_(utmb)",
-      "price": null,
-      "currency": null,
-      "registrationStatus": null,
-      "availableDistances": null,
-      "gpxUrl": null
-    },
     {
       "id": "dragons-back-race-2026-09-07",
       "name": "Dragons Back Race",
@@ -425,7 +387,7 @@
       "gpxUrl": null
     }
   ],
-  "lastAudit": "2026-08-28T18:21:34.456273",
-  "gpxUpdate": "2026-08-28 18:21:34",
-  "lastValidation": "2026-08-28T18:21:40.029825"
+  "lastAudit": "2026-08-29T12:29:40.614713",
+  "gpxUpdate": "2026-08-29 12:29:40",
+  "lastValidation": "2026-08-29T12:29:46.014165"
 }
