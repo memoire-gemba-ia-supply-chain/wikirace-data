@@ -1,26 +1,7 @@
 {
-  "lastUpdated": "2026-09-07T11:58:39.702619",
-  "totalEvents": 20,
+  "lastUpdated": "2026-09-08T10:53:55.975510",
+  "totalEvents": 19,
   "events": [
-    {
-      "id": "dragons-back-race-2026-09-07",
-      "name": "Dragons Back Race",
-      "date": "2026-09-07",
-      "city": "Conwy",
-      "country": "UK",
-      "countryCode": "GB",
-      "discipline": "Trail",
-      "distance": "Ultra Trail",
-      "elevationGain": null,
-      "description": "Major ultra-marathon in Conwy, known for its extreme difficulty and beauty.",
-      "registrationUrl": "https://ultrasignup.com",
-      "imageUrl": "dragons_back_race",
-      "price": null,
-      "currency": null,
-      "registrationStatus": null,
-      "availableDistances": null,
-      "gpxUrl": null
-    },
     {
       "id": "wasatch-front-100-2026-09-11",
       "name": "Wasatch Front 100",
@@ -387,7 +368,7 @@
       "gpxUrl": null
     }
   ],
-  "lastAudit": "2026-09-07T11:58:39.705228",
-  "gpxUpdate": "2026-09-07 11:58:39",
-  "lastValidation": "2026-09-07T11:58:44.574186"
+  "lastAudit": "2026-09-08T10:53:55.978148",
+  "gpxUpdate": "2026-09-08 10:53:55",
+  "lastValidation": "2026-09-08T10:54:01.632340"
 }
