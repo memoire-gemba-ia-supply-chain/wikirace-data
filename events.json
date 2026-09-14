@@ -1,26 +1,7 @@
 {
-  "lastUpdated": "2026-09-13T11:21:37.779620",
-  "totalEvents": 18,
+  "lastUpdated": "2026-09-14T12:13:34.290993",
+  "totalEvents": 17,
   "events": [
-    {
-      "id": "tor-des-géants-2026-09-13",
-      "name": "Tor des Géants",
-      "date": "2026-09-13",
-      "city": "Aosta Valley",
-      "country": "Italy",
-      "countryCode": "IT",
-      "discipline": "Trail",
-      "distance": "Ultra Trail",
-      "elevationGain": null,
-      "description": "Major ultra-marathon in Aosta Valley, known for its extreme difficulty and beauty.",
-      "registrationUrl": "https://ultrasignup.com",
-      "imageUrl": "tor_des_géants",
-      "price": null,
-      "currency": null,
-      "registrationStatus": null,
-      "availableDistances": null,
-      "gpxUrl": null
-    },
     {
       "id": "run-rabbit-run-100-2026-09-18",
       "name": "Run Rabbit Run 100",
@@ -349,7 +330,7 @@
       "gpxUrl": null
     }
   ],
-  "lastAudit": "2026-09-13T11:21:37.782159",
-  "gpxUpdate": "2026-09-13 11:21:37",
-  "lastValidation": "2026-09-13T11:21:42.774597"
+  "lastAudit": "2026-09-14T12:13:34.293522",
+  "gpxUpdate": "2026-09-14 12:13:34",
+  "lastValidation": "2026-09-14T12:13:39.369035"
 }
