@@ -1,45 +1,7 @@
 {
-  "lastUpdated": "2026-09-25T11:27:47.984396",
-  "totalEvents": 16,
+  "lastUpdated": "2026-09-26T11:03:02.093906",
+  "totalEvents": 14,
   "events": [
-    {
-      "id": "bear-100-2026-09-25",
-      "name": "Bear 100",
-      "date": "2026-09-25",
-      "city": "Logan",
-      "country": "USA",
-      "countryCode": "US",
-      "discipline": "Trail",
-      "distance": "Ultra Trail",
-      "elevationGain": null,
-      "description": "Major ultra-marathon in Logan, known for its extreme difficulty and beauty.",
-      "registrationUrl": "https://ultrasignup.com",
-      "imageUrl": "bear_100",
-      "price": null,
-      "currency": null,
-      "registrationStatus": null,
-      "availableDistances": null,
-      "gpxUrl": null
-    },
-    {
-      "id": "atlas-ultra-trail-2026-09-25",
-      "name": "Atlas Ultra Trail",
-      "date": "2026-09-25",
-      "city": "Imlil",
-      "country": "Morocco",
-      "countryCode": "MA",
-      "discipline": "Trail",
-      "distance": "Ultra Trail",
-      "elevationGain": null,
-      "description": "Major ultra-marathon in Imlil, known for its extreme difficulty and beauty.",
-      "registrationUrl": "https://ultrasignup.com",
-      "imageUrl": "atlas_ultra_trail",
-      "price": null,
-      "currency": null,
-      "registrationStatus": null,
-      "availableDistances": null,
-      "gpxUrl": null
-    },
     {
       "id": "spartathlon-2026-09-26",
       "name": "Spartathlon",
@@ -311,7 +273,7 @@
       "gpxUrl": null
     }
   ],
-  "lastAudit": "2026-09-25T11:27:47.986727",
-  "gpxUpdate": "2026-09-25 11:27:47",
-  "lastValidation": "2026-09-25T11:27:53.465408"
+  "lastAudit": "2026-09-26T11:03:02.096136",
+  "gpxUpdate": "2026-09-26 11:03:02",
+  "lastValidation": "2026-09-26T11:03:06.988717"
 }
