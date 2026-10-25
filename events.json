@@ -1,26 +1,7 @@
 {
-  "lastUpdated": "2026-10-24T10:34:09.863270",
-  "totalEvents": 10,
+  "lastUpdated": "2026-10-25T10:58:55.833083",
+  "totalEvents": 9,
   "events": [
-    {
-      "id": "trail-des-templiers-2026-10-24",
-      "name": "Trail des Templiers",
-      "date": "2026-10-24",
-      "city": "Millau",
-      "country": "France",
-      "countryCode": "FR",
-      "discipline": "Trail",
-      "distance": "Ultra Trail",
-      "elevationGain": 3500,
-      "description": "Major trail event in Millau, part of international circuits.",
-      "registrationUrl": "https://itra.run",
-      "imageUrl": "trail_des_templiers",
-      "price": null,
-      "currency": null,
-      "registrationStatus": null,
-      "availableDistances": null,
-      "gpxUrl": null
-    },
     {
       "id": "ironman-703-tangier-2026-10-25",
       "name": "Ironman 70.3 Tangier",
@@ -197,7 +178,7 @@
       "gpxUrl": null
     }
   ],
-  "lastAudit": "2026-10-24T10:34:09.865314",
-  "gpxUpdate": "2026-10-24 10:34:09",
-  "lastValidation": "2026-10-24T10:34:13.264040"
+  "lastAudit": "2026-10-25T10:58:55.835073",
+  "gpxUpdate": "2026-10-25 10:58:55",
+  "lastValidation": "2026-10-25T10:58:59.156149"
 }
