@@ -1,30 +1,7 @@
 {
-  "lastUpdated": "2026-10-25T10:58:55.833083",
-  "totalEvents": 9,
+  "lastUpdated": "2026-10-26T12:31:12.769315",
+  "totalEvents": 8,
   "events": [
-    {
-      "id": "ironman-703-tangier-2026-10-25",
-      "name": "Ironman 70.3 Tangier",
-      "date": "2026-10-25",
-      "city": "Tangier",
-      "country": "Morocco",
-      "countryCode": "MA",
-      "discipline": "Triathlon",
-      "distance": "Half Ironman",
-      "elevationGain": null,
-      "description": "A scenic race where the Mediterranean meets the Atlantic.",
-      "registrationUrl": "https://example.com",
-      "imageUrl": "ironman_70.3_tangier",
-      "price": null,
-      "currency": "USD",
-      "registrationStatus": "Open",
-      "availableDistances": [
-        "1.9km Swim",
-        "90km Bike",
-        "21.1km Run"
-      ],
-      "gpxUrl": null
-    },
     {
       "id": "javelina-jundred-2026-10-31",
       "name": "Javelina Jundred",
@@ -178,7 +155,7 @@
       "gpxUrl": null
     }
   ],
-  "lastAudit": "2026-10-25T10:58:55.835073",
-  "gpxUpdate": "2026-10-25 10:58:55",
-  "lastValidation": "2026-10-25T10:58:59.156149"
+  "lastAudit": "2026-10-26T12:31:12.771268",
+  "gpxUpdate": "2026-10-26 12:31:12",
+  "lastValidation": "2026-10-26T12:31:13.061938"
 }
