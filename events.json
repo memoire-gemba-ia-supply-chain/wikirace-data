@@ -1,45 +1,7 @@
 {
-  "lastUpdated": "2026-10-31T11:54:21.197637",
-  "totalEvents": 8,
+  "lastUpdated": "2026-11-01T12:53:40.912210",
+  "totalEvents": 6,
   "events": [
-    {
-      "id": "javelina-jundred-2026-10-31",
-      "name": "Javelina Jundred",
-      "date": "2026-10-31",
-      "city": "Fountain Hills",
-      "country": "USA",
-      "countryCode": "US",
-      "discipline": "Trail",
-      "distance": "Ultra Trail",
-      "elevationGain": 2400,
-      "description": "Major trail event in Fountain Hills, part of international circuits.",
-      "registrationUrl": "https://itra.run",
-      "imageUrl": "javelina_jundred",
-      "price": null,
-      "currency": null,
-      "registrationStatus": null,
-      "availableDistances": null,
-      "gpxUrl": null
-    },
-    {
-      "id": "ultra-trail-porto-2026-10-31",
-      "name": "Ultra-Trail Porto",
-      "date": "2026-10-31",
-      "city": "Porto",
-      "country": "Portugal",
-      "countryCode": "PT",
-      "discipline": "Trail",
-      "distance": "Ultra Trail",
-      "elevationGain": null,
-      "description": "Major ultra-marathon in Porto, known for its extreme difficulty and beauty.",
-      "registrationUrl": "https://ultrasignup.com",
-      "imageUrl": "ultra-trail_porto",
-      "price": null,
-      "currency": null,
-      "registrationStatus": null,
-      "availableDistances": null,
-      "gpxUrl": null
-    },
     {
       "id": "sahara-ultra-100-2026-11-20",
       "name": "Sahara Ultra 100",
@@ -155,7 +117,7 @@
       "gpxUrl": null
     }
   ],
-  "lastAudit": "2026-10-31T11:54:21.199856",
-  "gpxUpdate": "2026-10-31 11:54:21",
-  "lastValidation": "2026-10-31T11:54:21.386489"
+  "lastAudit": "2026-11-01T12:53:40.914127",
+  "gpxUpdate": "2026-11-01 12:53:40",
+  "lastValidation": "2026-11-01T12:53:41.051443"
 }
