@@ -1,26 +1,7 @@
 {
-  "lastUpdated": "2026-11-20T15:04:34.984099",
-  "totalEvents": 6,
+  "lastUpdated": "2026-11-21T14:25:10.897584",
+  "totalEvents": 5,
   "events": [
-    {
-      "id": "sahara-ultra-100-2026-11-20",
-      "name": "Sahara Ultra 100",
-      "date": "2026-11-20",
-      "city": "Merzouga",
-      "country": "Morocco",
-      "countryCode": "MA",
-      "discipline": "Trail",
-      "distance": "Ultra Trail",
-      "elevationGain": null,
-      "description": "Major ultra-marathon in Merzouga, known for its extreme difficulty and beauty.",
-      "registrationUrl": "https://ultrasignup.com",
-      "imageUrl": "sahara_ultra_100",
-      "price": null,
-      "currency": null,
-      "registrationStatus": null,
-      "availableDistances": null,
-      "gpxUrl": null
-    },
     {
       "id": "jfk-50-mile-2026-11-21",
       "name": "JFK 50 Mile",
@@ -117,7 +98,7 @@
       "gpxUrl": null
     }
   ],
-  "lastAudit": "2026-11-20T15:04:34.985979",
-  "gpxUpdate": "2026-11-20 15:04:34",
-  "lastValidation": "2026-11-20T15:04:35.125632"
+  "lastAudit": "2026-11-21T14:25:10.899103",
+  "gpxUpdate": "2026-11-21 14:25:10",
+  "lastValidation": "2026-11-21T14:25:11.052973"
 }
