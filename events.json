@@ -1,26 +1,7 @@
 {
-  "lastUpdated": "2026-11-21T14:25:10.897584",
-  "totalEvents": 5,
+  "lastUpdated": "2026-11-22T14:18:16.721976",
+  "totalEvents": 4,
   "events": [
-    {
-      "id": "jfk-50-mile-2026-11-21",
-      "name": "JFK 50 Mile",
-      "date": "2026-11-21",
-      "city": "Boonsboro",
-      "country": "USA",
-      "countryCode": "US",
-      "discipline": "Trail",
-      "distance": "Ultra Trail",
-      "elevationGain": null,
-      "description": "Major ultra-marathon in Boonsboro, known for its extreme difficulty and beauty.",
-      "registrationUrl": "https://ultrasignup.com",
-      "imageUrl": "jfk_50_mile",
-      "price": null,
-      "currency": null,
-      "registrationStatus": null,
-      "availableDistances": null,
-      "gpxUrl": null
-    },
     {
       "id": "ultra-trail-cape-town-2026-11-27",
       "name": "Ultra-Trail Cape Town",
@@ -98,7 +79,7 @@
       "gpxUrl": null
     }
   ],
-  "lastAudit": "2026-11-21T14:25:10.899103",
-  "gpxUpdate": "2026-11-21 14:25:10",
-  "lastValidation": "2026-11-21T14:25:11.052973"
+  "lastAudit": "2026-11-22T14:18:16.874259",
+  "gpxUpdate": "2026-11-22 14:18:16",
+  "lastValidation": "2026-11-22T14:18:16.950292"
 }
